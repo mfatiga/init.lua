@@ -1,4 +1,4 @@
-# NeoVim config repo
+# NeoVim config
 
 ![Lua autocomplete](screens/screen1.png)
 
