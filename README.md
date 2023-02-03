@@ -1,5 +1,7 @@
 # NeoVim config repo
 
+![Lua autocomplete](screens/screen1.png)
+
 Combined ideas and configs from [ThePrimeagen](https://github.com/ThePrimeagen/init.lua) and [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim)
 
 Run :PackerSync to sync plugins.
