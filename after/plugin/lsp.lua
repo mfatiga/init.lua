@@ -7,7 +7,7 @@ local servers = {
       filetypes = { 'haskell', 'lhaskell', 'cabal' },
   },
 
-  sumneko_lua = {
+  lua_ls = {
     settings = {
         Lua = {
           workspace = { checkThirdParty = false },
