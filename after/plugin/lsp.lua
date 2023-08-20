@@ -6,6 +6,7 @@ local servers = {
   hls = {
       filetypes = { 'haskell', 'lhaskell', 'cabal' },
   },
+  gopls ={},
 
   lua_ls = {
     settings = {
