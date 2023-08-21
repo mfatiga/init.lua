@@ -104,6 +104,14 @@ Here is a list of some of the custom binds and commands.
 | n    | `]d`       | Diagnostic goto next     |
 
 
+### Nvim-Tree
+
+| Mode | Keys        | Description         |
+| ---- | ----------- | ------------------- |
+| n    | `<Space>to` | Tree open and focus |
+| n    | `<Space>tc` | Tree close          |
+
+
 ### Undotree
 
 | Mode | Keys       | Description     |

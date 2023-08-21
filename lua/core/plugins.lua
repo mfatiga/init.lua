@@ -55,6 +55,12 @@ return require('packer').startup(function(use)
   -- Fuzzy Finder Algorithm which requires local dependencies to be built. Only load if `make` is available
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make', cond = vim.fn.executable 'make' == 1 }
 
+  -- devicons - required by lualine and nvim-tree
+  use 'nvim-tree/nvim-web-devicons'
+
+  -- nvim-tree
+  use 'nvim-tree/nvim-tree.lua'
+
   -- Undo-tree
   use 'mbbill/undotree'
 
@@ -65,10 +71,7 @@ return require('packer').startup(function(use)
   use 'sainnhe/gruvbox-material'
 
   -- LuaLine
-  use {
-    'nvim-lualine/lualine.nvim',
-    requires = { 'kyazdani42/nvim-web-devicons' }
-  }
+  use 'nvim-lualine/lualine.nvim'
 
   -- "gc" to comment visual regions
   use 'numToStr/Comment.nvim'
