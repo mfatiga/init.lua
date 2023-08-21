@@ -2,6 +2,7 @@ require('lualine').setup {
   options = {
     icons_enabled = true,
     theme = 'gruvbox-material',
+    disabled_filetypes = { 'packer', 'NvimTree' }
   },
   sections = {
     lualine_a = {'mode'},
