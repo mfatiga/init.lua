@@ -78,4 +78,7 @@ return require('packer').startup(function(use)
 
   -- Add indentation guides even on blank lines
   use 'lukas-reineke/indent-blankline.nvim'
+
+  -- Which-key?
+  use 'folke/which-key.nvim'
 end)
