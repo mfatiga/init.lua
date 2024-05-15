@@ -61,6 +61,9 @@ return require('packer').startup(function(use)
   -- nvim-tree
   use 'nvim-tree/nvim-tree.lua'
 
+  -- file manager
+  use 'stevearc/oil.nvim'
+
   -- Undo-tree
   use 'mbbill/undotree'
 
