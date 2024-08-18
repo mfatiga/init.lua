@@ -4,9 +4,13 @@
 
 Combined ideas and configs from [ThePrimeagen](https://github.com/ThePrimeagen/init.lua) and [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim)
 
-Run :PackerSync to sync plugins.
+Clone into `.config/nvim` and start NeoVim.
+Dependencies:
+ - fzf
+ - luarocks
 
- - packer for plugin management
+Features:
+ - lazy for plugin management
  - telescope for search and navigation
  - lsp with autocomplete
  - mason for language server management
@@ -17,9 +21,9 @@ Run :PackerSync to sync plugins.
  - using gruvbox-material theme for all
 
 ## Customization
- - configure LSP servers at the top of [after/plugin/lsp.lua](after/plugin/lsp.lua)
- - configure theme settings in [lua/core/theme.lua](lua/core/theme.lua)
- - set lualine theme in [after/plugin/lualine.lua](after/plugin/lualine.lua)
+ - configure LSP servers at the top of [lua/plugins/lsp.lua](lua/plugins/lsp.lua)
+ - configure theme settings in [lua/plugins/init.lua](lua/plugins/theme.lua)
+ - set lualine theme in [lua/plugins/lualine.lua](lua/plugins/lualine.lua)
 
 
 ## Keybinds and commands

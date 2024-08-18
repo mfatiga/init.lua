@@ -1,14 +1,14 @@
 -- Settings
-require("core.settings")
+require("config.settings")
 
 -- Remaps
-require("core.remaps")
+require("config.remaps")
 
 -- Initialize plugins
-require("core.plugins")
+require("config.lazy")
 
 -- Misc.
-require("core.misc")
+require("config.misc")
 
 -- Theme
-require("core.theme")
+require("config.theme")
