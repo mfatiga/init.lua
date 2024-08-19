@@ -35,3 +35,6 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz", { desc = 'Loclist previous'
 
 -- Unbind Q
 vim.keymap.set("n", "Q", "<nop>")
+
+-- Delete buffer
+vim.keymap.set("n", "<leader>x", "<cmd>bd<CR>bn<CR>", { desc = 'Close buffer' })
