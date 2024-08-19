@@ -9,6 +9,3 @@ require("config.lazy")
 
 -- Misc.
 require("config.misc")
-
--- Theme
-require("config.theme")
