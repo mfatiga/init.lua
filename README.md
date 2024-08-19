@@ -82,6 +82,7 @@ Here is a list of some of the custom binds and commands.
 | n    | `<Space>/`       | [/] Fuzzily search in current buffer] |
 | n    | `<Space>?`       | [?] Find recently opened files        |
 | n    | `<Space><Space>` | [ ] Find existing buffers             |
+| n    | `<Space>st`      | [S]earch [T]ODOs                      |
 
 
 ### LSP
