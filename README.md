@@ -47,6 +47,18 @@ Here is a list of some of the custom binds and commands.
 | n    | `<Space>j`  | Loclist previous                          |
 
 
+### File management
+
+| Mode | Keys        | Description                |
+| ---- | ----------- | -------------------------- |
+| n    | `<Space>to` | Tree open and focus        |
+| n    | `<Space>tc` | Tree close                 |
+| n    | `-`         | oil.nvim file mgr          |
+| n    | `<Space>-`  | oil.nvim file mgr floating |
+| n    | `<Ctrl-c>`  | oil.nvim file mgr close    |
+| n    | `<Space>lg` | open lazygit floating      |
+
+
 ### Telescope
 
 | Mode | Keys             | Description                           |
@@ -106,14 +118,6 @@ Here is a list of some of the custom binds and commands.
 | n    | `<Space>e` | Open diagnostics loclist |
 | n    | `[d`       | Diagnostic goto prev     |
 | n    | `]d`       | Diagnostic goto next     |
-
-
-### Nvim-Tree
-
-| Mode | Keys        | Description         |
-| ---- | ----------- | ------------------- |
-| n    | `<Space>to` | Tree open and focus |
-| n    | `<Space>tc` | Tree close          |
 
 
 ### Undotree
