@@ -7,7 +7,7 @@ return {
         options = {
           icons_enabled = true,
           theme = 'gruvbox-material',
-          disabled_filetypes = { 'packer', 'NvimTree' }
+          disabled_filetypes = { 'NvimTree' }
         },
         sections = {
           lualine_a = {'mode'},
@@ -33,7 +33,7 @@ return {
         },
         tabline = {
           lualine_a = {'buffers'},
-          lualine_b = {'branch'},
+          lualine_b = {},
           lualine_c = {},
           lualine_x = {},
           lualine_y = {},
