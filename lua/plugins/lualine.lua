@@ -5,9 +5,10 @@ return {
     config = function()
       require('lualine').setup {
         options = {
+          globalstatus = true,
           icons_enabled = true,
           theme = 'gruvbox-material',
-          disabled_filetypes = { 'NvimTree' }
+          disabled_filetypes = { }
         },
         sections = {
           lualine_a = {'mode'},
