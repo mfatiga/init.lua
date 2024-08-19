@@ -54,6 +54,7 @@ Here is a list of some of the custom binds and commands.
 | n    | `<Ctrl-j>`  | Quickfix previous                         |
 | n    | `<Space>k`  | Loclist next                              |
 | n    | `<Space>j`  | Loclist previous                          |
+| n    | `<Space>x`  | Delete current buffer and switch to next  |
 
 
 ### File management
