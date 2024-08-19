@@ -10,6 +10,9 @@ return {
           theme = 'gruvbox-material',
           disabled_filetypes = { }
         },
+        extensions = {
+          'lazy', 'mason', 'nvim-tree', 'oil', 'quickfix'
+        },
         sections = {
           lualine_a = {'mode'},
           lualine_b = {'branch', 'diff', 'diagnostics'},
