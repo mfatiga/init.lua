@@ -5,15 +5,16 @@ return {
   -- Icons for telescope, nvim-tree, lualine
   {
     'nvim-tree/nvim-web-devicons',
-    priority=1000,
+    lazy = false, -- make sure to load on startup
+    priority=1000, -- make sure to load immediately
     enabled = vim.g.have_nerd_font
   },
 
   -- Theme
   {
     'sainnhe/gruvbox-material',
-    lazy = false, -- make sure we load this during startup if it is your main colorscheme
-    priority = 999, -- make sure to load this before all the other start plugins
+    lazy = false, -- make sure we load on startup
+    priority = 999, -- make sure to load immediately
     config = function()
       -- load the colorscheme here
       vim.opt.termguicolors = true
