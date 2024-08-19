@@ -8,6 +8,7 @@ Clone into `.config/nvim` and start NeoVim.
 Dependencies:
  - fzf
  - luarocks
+ - lazygit
 
 Features:
  - lazy for plugin management

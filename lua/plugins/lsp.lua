@@ -1,3 +1,23 @@
+-- Language servers
+local servers = {
+  pyright = {},
+  elixirls = {},
+  rust_analyzer = {},
+  hls = {
+      filetypes = { 'haskell', 'lhaskell', 'cabal' },
+  },
+  gopls ={},
+
+  lua_ls = {
+    settings = {
+        Lua = {
+          workspace = { checkThirdParty = false },
+          telemetry = { enable = false },
+        },
+    },
+  },
+}
+
 return {
   {
      -- LSP and Autocomplete
@@ -26,26 +46,6 @@ return {
       {'folke/neodev.nvim'},
     },
     config = function()
-      -- Language servers
-      local servers = {
-        pyright = {},
-        elixirls = {},
-        rust_analyzer = {},
-        hls = {
-            filetypes = { 'haskell', 'lhaskell', 'cabal' },
-        },
-        gopls ={},
-
-        lua_ls = {
-          settings = {
-              Lua = {
-                workspace = { checkThirdParty = false },
-                telemetry = { enable = false },
-              },
-          },
-        },
-      }
-
       -- Diagnostic keymaps
       vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Diagnostic previous' })
       vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Diagnostic next' })
