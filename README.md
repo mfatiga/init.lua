@@ -12,8 +12,9 @@ Dependencies:
 Features:
  - lazy for plugin management
  - telescope for search and navigation
+ - file tree-view and file manager integrated
  - lsp with autocomplete
- - mason for language server management
+ - language server management integration using mason
  - treesitter for code analysis and coloring
  - undotree for undo history
  - lualine for bottom status line
@@ -28,6 +29,13 @@ Features:
 
 ## Keybinds and commands
 Here is a list of some of the custom binds and commands.
+
+
+## Commands
+| Command  | Description                |
+| -------- | -------------------------- |
+| `:Lazy`  | Plugin management          |
+| `:Mason` | Language server management |
 
 
 ### General
