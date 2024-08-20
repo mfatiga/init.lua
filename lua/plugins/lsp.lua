@@ -28,7 +28,18 @@ return {
       {'williamboman/mason-lspconfig.nvim'}, -- Optional
 
       -- Autocompletion
-      {'hrsh7th/nvim-cmp'},         -- Required
+      {
+        'hrsh7th/nvim-cmp',
+        -- nvim dev
+        opts = function (_, opts)
+          -- completion source for require statements and module annotations
+          opts.sources = opts.sources or {}
+          table.insert(opts.sources, {
+            name = "lazydev",
+            group_index = 0, -- set group index to 0 to skip loading LuaLS completions
+          })
+        end
+      },         -- Required
       {'hrsh7th/cmp-nvim-lsp'},     -- Required
       {'hrsh7th/cmp-buffer'},       -- Optional
       {'hrsh7th/cmp-path'},         -- Optional
@@ -39,12 +50,6 @@ return {
       -- Snippets
       {'L3MON4D3/LuaSnip'},             -- Required
       {'rafamadriz/friendly-snippets'}, -- Optional
-
-      -- Useful status updates for LSP
-      {'j-hui/fidget.nvim', tag='legacy'},
-
-      -- Additional lua configuration, makes nvim stuff amazing
-      {'folke/neodev.nvim'},
     },
     config = function()
       -- Diagnostic keymaps
@@ -52,12 +57,6 @@ return {
       vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Diagnostic next' })
       vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Diagnostic Open Float'})
       vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Diagnostic Set Loclist'})
-
-      -- Setup neovim lua configuration
-      require('neodev').setup()
-
-      -- Turn on lsp status information
-      require('fidget').setup()
 
       -- LSP on_attach
       local on_attach = function(_, bufnr)
@@ -188,4 +187,18 @@ return {
       }
     end
   },
+
+  -- nvim dev
+  {
+    "folke/lazydev.nvim",
+    ft = "lua", -- only load on lua files
+    opts = {
+      library = {
+        -- See the configuration section for more details
+        -- Load luvit types when the `vim.uv` word is found
+        { path = "luvit-meta/library", words = { "vim%.uv" } },
+      },
+    },
+  },
+  { "Bilal2453/luvit-meta", lazy = true },
 }
