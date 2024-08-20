@@ -1,14 +1,3 @@
-local is_recording = function()
-  local reg = vim.fn.reg_recording()
-  return reg ~= ""
-end
-
-local get_recording = function()
-  local reg = vim.fn.reg_recording()
-  if reg == "" then return "" end
-  return "REC @" .. reg
-end
-
 return {
   {
     -- LuaLine
@@ -28,8 +17,11 @@ return {
           lualine_a = {
             'mode',
             {
-              get_recording,
-              cond = is_recording
+              function()
+                local reg = vim.fn.reg_recording()
+                if reg == "" then return "" end
+                return "REC @" .. reg
+              end
             }
           },
           lualine_b = {'branch', 'diff', 'diagnostics'},
