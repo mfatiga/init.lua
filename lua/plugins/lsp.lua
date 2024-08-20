@@ -32,8 +32,9 @@ return {
       {'hrsh7th/cmp-nvim-lsp'},     -- Required
       {'hrsh7th/cmp-buffer'},       -- Optional
       {'hrsh7th/cmp-path'},         -- Optional
-      {'saadparwaiz1/cmp_luasnip'}, -- Optional
+      {'hrsh7th/cmp-cmdline'},      -- Optional
       {'hrsh7th/cmp-nvim-lua'},     -- Optional
+      {'saadparwaiz1/cmp_luasnip'}, -- Optional
 
       -- Snippets
       {'L3MON4D3/LuaSnip'},             -- Required
@@ -97,8 +98,8 @@ return {
 
       -- Autocomplete setup
       -- nvim-cmp setup
-      local cmp = require 'cmp'
-      local luasnip = require 'luasnip'
+      local cmp = require('cmp')
+      local luasnip = require('luasnip')
 
       cmp.setup {
         snippet = {
@@ -138,6 +139,26 @@ return {
           { name = 'luasnip' },
         },
       }
+
+      cmp.setup.cmdline("/", {
+        mapping = cmp.mapping.preset.cmdline(),
+        sources = {
+          { name = "buffer" },
+        },
+      })
+      cmp.setup.cmdline(':', {
+        mapping = cmp.mapping.preset.cmdline(),
+        sources = cmp.config.sources({
+          { name = 'path' }
+        }, {
+          {
+            name = 'cmdline',
+            option = {
+              ignore_cmds = { 'Man', '!' }
+            }
+          }
+        })
+      })
 
       -- nvim-cmp supports additional completion capabilities, so broadcast that to servers
       local capabilities = vim.lsp.protocol.make_client_capabilities()
