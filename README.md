@@ -41,21 +41,24 @@ Here is a list of some of the custom binds and commands.
 
 ### General
 
-| Mode | Keys        | Description                               |
-| ---- | ----------- | ----------------------------------------- |
-| n    | `K`         | Move selected lines UP with auto-indent   |
-| n    | `J`         | Move selected lines DOWN with auto-indent |
-| x    | `<Space>p`  | Paste-overwrite selected                  |
-| n/v  | `<Space>y`  | Begin yank to system clipboard            |
-| n    | `<Space>Y`  | Yank line to system clipboard             |
-| n/v  | `<Space>d`  | Begin delete without clipboard            |
-| n    | `<Space>ss` | Search and replace                        |
-| n    | `<Ctrl-k>`  | Quickfix next                             |
-| n    | `<Ctrl-j>`  | Quickfix previous                         |
-| n    | `<Space>k`  | Loclist next                              |
-| n    | `<Space>j`  | Loclist previous                          |
-| n    | `<Space>x`  | Delete current buffer and switch to next  |
-| n    | `<Space>zz` | Zen-Mode                                  |
+| Mode | Keys        | Description                                     |
+| ---- | ----------- | ----------------------------------------------- |
+| n    | `K`         | Move selected lines UP with auto-indent         |
+| n    | `J`         | Move selected lines DOWN with auto-indent       |
+| x    | `<Space>p`  | Paste-overwrite selected                        |
+| n/v  | `<Space>y`  | Begin yank to system clipboard                  |
+| n    | `<Space>Y`  | Yank line to system clipboard                   |
+| n/v  | `<Space>d`  | Begin delete without clipboard                  |
+| n    | `<Space>ss` | Search and replace                              |
+| n    | `<Ctrl-k>`  | Quickfix next                                   |
+| n    | `<Ctrl-j>`  | Quickfix previous                               |
+| n    | `<Space>k`  | Loclist next                                    |
+| n    | `<Space>j`  | Loclist previous                                |
+| n    | `<Space>bx` | Delete current buffer and switch to next        |
+| n    | `<Space>bX` | Force delete current buffer and switch to next  |
+| n    | `<Space>bd` | Delete current buffer                           |
+| n    | `<Space>bD` | Force delete current buffer                     |
+| n    | `<Space>zz` | Zen-Mode                                        |
 
 
 ### File management
