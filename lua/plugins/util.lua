@@ -57,9 +57,7 @@ return {
     },
     config = function (_, opts)
       require("zen-mode").setup(opts)
-      vim.keymap.set("n", "<leader>zz", function ()
-        require("zen-mode").toggle()
-      end)
+      vim.keymap.set("n", "<leader>zz", function () require("zen-mode").toggle() end, { desc = 'Toggle [Z]en mode' })
     end
   },
   {
