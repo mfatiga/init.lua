@@ -23,10 +23,11 @@ return {
   {
     "folke/which-key.nvim",
     event = "VimEnter",
-    config = function()
+    opts = {},
+    config = function(_, opts)
       vim.o.timeout = true
       vim.o.timeoutlen = 300
-      require("which-key").setup { }
+      require("which-key").setup(opts)
     end
   },
   -- Zen mode
