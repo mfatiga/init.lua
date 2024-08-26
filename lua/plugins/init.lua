@@ -16,7 +16,6 @@ return {
     lazy = false, -- make sure we load on startup
     priority = 999, -- make sure to load immediately
     config = function()
-      -- load the colorscheme here
       vim.opt.termguicolors = true
       vim.o.background = "dark"
       vim.g.gruvbox_material_background = "hard"
