@@ -19,7 +19,6 @@ Features:
  - treesitter for code analysis and coloring
  - undotree for undo history
  - lualine for bottom status line
- - comment for code commenting shortcuts
  - using gruvbox-material theme for all
 
 ## Customization
@@ -151,18 +150,3 @@ Here is a list of some of the custom binds and commands.
 | Mode | Keys       | Description     |
 | ---- | ---------- | --------------- |
 | n    | `<Space>u` | Open [U]ndotree |
-
-
-### Commenting
-
-| Mode | Keys  | Description                       |
-| ---- | ----- | --------------------------------- |
-| n    | `gcA` | Comment insert end of line        |
-| n    | `gcO` | Comment insert above              |
-| n    | `gco` | Comment insert below              |
-| x    | `gb`  | Comment toggle blockwise (visual) |
-| x    | `gc`  | Comment toggle linewise (visual)  |
-| n    | `gbc` | Comment toggle current block      |
-| n    | `gcc` | Comment toggle current line       |
-| n    | `gb`  | Comment toggle blockwise          |
-| n    | `gc`  | Comment toggle linewise           |
