@@ -73,8 +73,9 @@ Here is a list of some of the custom binds and commands.
 
 | Mode | Keys        | Description                |
 | ---- | ----------- | -------------------------- |
-| n    | `<Space>to` | Tree open and focus        |
-| n    | `<Space>tc` | Tree close                 |
+| n    | `<Space>tt` | [T]ree [t]oggle            |
+| n    | `<Space>to` | [T]ree [o]pen and focus    |
+| n    | `<Space>tc` | [T]ree [c]lose             |
 | n    | `-`         | oil.nvim file mgr          |
 | n    | `<Space>-`  | oil.nvim file mgr floating |
 | n    | `<Ctrl-c>`  | oil.nvim file mgr close    |
