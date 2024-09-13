@@ -61,6 +61,14 @@ Here is a list of some of the custom binds and commands.
 | n    | `<Space>zz` | Zen-Mode                                        |
 
 
+### Movement
+| n/x/o | `s`        | Flash - jump                       |
+| n/x/o | `S`        | Flash - treesitter                 |
+| o     | `r`        | Flash - remote (in o-pending mode) |
+| o/x   | `R`        | Flash - treesitter search          |
+| c     | `<Ctrl-s>` | Toggle Flash Search"               |
+
+
 ### File management
 
 | Mode | Keys        | Description                |
