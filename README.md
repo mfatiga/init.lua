@@ -77,17 +77,18 @@ Here is a list of some of the custom binds and commands.
 
 | Mode | Keys             | Description                           |
 | ---- | ---------------- | ------------------------------------- |
+| n    | `<Space><Space>` | [ ] Find existing buffers             |
 | n    | `<Space>sf`      | [S]earch [F]iles                      |
 | n    | `<Space>sg`      | [S]earch [G]it files                  |
-| n    | `<Space>sd`      | [S]earch [D]iagnostics                |
 | n    | `<Space>sr`      | [S]earch by G[r]ep                    |
+| n    | `<Space>s.`      | [?] Find recently opened files        |
 | n    | `<Space>sw`      | [S]earch current [W]ord               |
-| n    | `<Space>sh`      | [S]earch [H]elp                       |
-| n    | `<Space>/`       | [/] Fuzzily search in current buffer] |
-| n    | `<Space>?`       | [?] Find recently opened files        |
-| n    | `<Space><Space>` | [ ] Find existing buffers             |
+| n    | `<Space>sd`      | [S]earch [D]iagnostics                |
 | n    | `<Space>st`      | [S]earch [T]ODOs                      |
 | n    | `<Space>sn`      | [S]earch [N]oice/[N]otifications      |
+| n    | `<Space>sh`      | [S]earch [H]elp                       |
+| n    | `<Space>sk`      | [S]earsh [K]eymaps                    |
+| n    | `<Space>/`       | [/] Fuzzily search in current buffer] |
 
 
 ### LSP
