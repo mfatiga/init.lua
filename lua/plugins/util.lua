@@ -60,6 +60,7 @@ return {
       vim.keymap.set("n", "<leader>zz", function () require("zen-mode").toggle() end, { desc = 'Toggle [Z]en mode' })
     end
   },
+  -- Gray out non-important lines in zen mode
   {
     "folke/twilight.nvim",
     opts = {
