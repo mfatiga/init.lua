@@ -61,6 +61,8 @@ Here is a list of some of the custom binds and commands.
 
 
 ### Movement
+| Mode  | Keys       | Description                        |
+| ----- | ---------- | ---------------------------------- |
 | n/x/o | `s`        | Flash - jump                       |
 | n/x/o | `S`        | Flash - treesitter                 |
 | o     | `r`        | Flash - remote (in o-pending mode) |
