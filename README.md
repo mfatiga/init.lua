@@ -77,6 +77,8 @@ Here is a list of some of the custom binds and commands.
 | n    | `<Space>tt` | [T]ree [t]oggle            |
 | n    | `<Space>to` | [T]ree [o]pen and focus    |
 | n    | `<Space>tc` | [T]ree [c]lose             |
+| n    | `<Space>f`  | mini.files - file dir      |
+| n    | `<Space>F`  | mini.files - project dir   |
 | n    | `<Space>-`  | oil.nvim file mgr          |
 | n    | `-`         | oil.nvim file mgr floating |
 | n    | `q`         | oil.nvim file mgr close    |
