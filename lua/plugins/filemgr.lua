@@ -26,7 +26,7 @@ return {
           keymaps = {
               ["g?"] = "actions.show_help",
               ["<CR>"] = "actions.select",
-              ["<C-c>"] = "actions.close",
+              ["q"] = "actions.close",
               ["<C-l>"] = "actions.refresh",
               ["-"] = "actions.parent",
               ["_"] = "actions.open_cwd",
@@ -41,10 +41,10 @@ return {
       }
 
       -- Open parent directory in current window
-      vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "File manager" })
+      vim.keymap.set("n", "<leader>-", "<CMD>Oil<CR>", { desc = "File manager" })
 
       -- Open parent directory in floating window
-      vim.keymap.set("n", "<space>-", require("oil").toggle_float, { desc = "File manager - floating" })
+      vim.keymap.set("n", "-", require("oil").toggle_float, { desc = "File manager - floating" })
     end,
   },
 }

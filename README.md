@@ -77,9 +77,9 @@ Here is a list of some of the custom binds and commands.
 | n    | `<Space>tt` | [T]ree [t]oggle            |
 | n    | `<Space>to` | [T]ree [o]pen and focus    |
 | n    | `<Space>tc` | [T]ree [c]lose             |
-| n    | `-`         | oil.nvim file mgr          |
-| n    | `<Space>-`  | oil.nvim file mgr floating |
-| n    | `<Ctrl-c>`  | oil.nvim file mgr close    |
+| n    | `<Space>-`  | oil.nvim file mgr          |
+| n    | `-`         | oil.nvim file mgr floating |
+| n    | `q`         | oil.nvim file mgr close    |
 | n    | `<Space>lg` | open lazygit floating      |
 
 
