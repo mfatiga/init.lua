@@ -54,13 +54,13 @@ return {
       -- Use `''` (empty string) to not create one.
       mappings = {
         close       = 'q',
-        go_in       = '+',
+        go_in       = '<CR>',
         go_in_plus  = '',
         go_out      = '',
-        go_out_plus = '-',
+        go_out_plus = '<BS>',
         mark_goto   = "'",
         mark_set    = 'm',
-        reset       = '<BS>',
+        reset       = '',
         reveal_cwd  = '@',
         show_help   = 'g?',
         synchronize = '=',
