@@ -66,8 +66,8 @@ return {
     dashboard.section.buttons.val = {
       dashboard.button("f", " " .. " Find file", "<cmd>Telescope find_files <CR>"),
       dashboard.button("n", " " .. " New file", "<cmd>ene <BAR> startinsert <CR>"),
-      dashboard.button("l", " " .. " Plugins", "<cmd>Lazy<CR>"),
-      dashboard.button("m", " " .. " Language Servers", "<cmd>Mason<CR>"),
+      dashboard.button("p", " " .. " Plugins", "<cmd>Lazy<CR>"),
+      dashboard.button("l", " " .. " Language Servers", "<cmd>Mason<CR>"),
       dashboard.button("q", " " .. " Quit", "<cmd>qa<CR>"),
     }
 
