@@ -99,7 +99,8 @@ Here is a list of some of the custom binds and commands.
 | n    | `<Space>st`      | [S]earch [T]ODOs                      |
 | n    | `<Space>sn`      | [S]earch [N]oice/[N]otifications      |
 | n    | `<Space>sh`      | [S]earch [H]elp                       |
-| n    | `<Space>sk`      | [S]earsh [K]eymaps                    |
+| n    | `<Space>sk`      | [S]earch [K]eymaps                    |
+| n    | `<Space>su`      | [S]earch [U]ndo-tree                  |
 | n    | `<Space>/`       | [/] Fuzzily search in current buffer] |
 
 
@@ -147,10 +148,3 @@ Here is a list of some of the custom binds and commands.
 | n    | `<Space>e` | Open diagnostics loclist |
 | n    | `[d`       | Diagnostic goto prev     |
 | n    | `]d`       | Diagnostic goto next     |
-
-
-### Undotree
-
-| Mode | Keys       | Description     |
-| ---- | ---------- | --------------- |
-| n    | `<Space>u` | Open [U]ndotree |

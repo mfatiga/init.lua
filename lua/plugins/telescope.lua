@@ -10,6 +10,7 @@ return {
       end,
     },
     { 'nvim-telescope/telescope-ui-select.nvim' },
+    { 'debugloop/telescope-undo.nvim' },
   },
   config = function()
     require('telescope').setup {
@@ -25,15 +26,26 @@ return {
         ['ui-select'] = {
           require('telescope.themes').get_dropdown(),
         },
+        ['undo'] = {
+          side_by_side = true,
+          layout_strategy = "vertical",
+          layout_config = {
+            preview_height = 0.8,
+          },
+          vim_diff_opts = {
+            ctxlen = 32
+          },
+        },
       },
     }
 
     -- Enable Telescope extensions if they are installed
     pcall(require('telescope').load_extension, 'fzf')
     pcall(require('telescope').load_extension, 'ui-select')
+    pcall(require('telescope').load_extension, 'undo')
 
     -- See `:help telescope.builtin`
-    local builtin = require 'telescope.builtin'
+    local builtin = require('telescope.builtin')
     vim.keymap.set('n', '<leader><leader>', builtin.buffers, { desc = '[ ] Find existing buffers' })
     vim.keymap.set('n', '<leader>sf', builtin.find_files, { desc = '[S]earch [F]iles' })
     vim.keymap.set('n', '<leader>sg', builtin.git_files, { desc = '[S]earch [G]it files' })
@@ -44,5 +56,9 @@ return {
     vim.keymap.set('n', '<leader>sk', builtin.keymaps, { desc = '[S]earch [K]eymaps' })
     vim.keymap.set('n', '<leader>s.', builtin.oldfiles, { desc = '[S]earch Recent Files ("." for repeat)' })
     vim.keymap.set('n', '<leader>/', builtin.current_buffer_fuzzy_find, { desc = '[/] Fuzzily search in current buffer' })
+
+    -- extension mappings
+    local telescope = require('telescope')
+    vim.keymap.set('n', '<leader>su', telescope.extensions.undo.undo, { desc = '[S]earch [U]ndo-tree' })
   end,
 }
