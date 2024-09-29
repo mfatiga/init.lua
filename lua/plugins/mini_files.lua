@@ -5,8 +5,8 @@ return {
     -- Use `''` (empty string) to not create one.
     mappings = {
       close       = 'q',
-      go_in       = '<CR>',
-      go_in_plus  = '',
+      go_in       = '',
+      go_in_plus  = '<CR>',
       go_out      = '',
       go_out_plus = '<BS>',
       mark_goto   = "'",
@@ -20,6 +20,9 @@ return {
     },
     windows = {
       preview = true,
+      width_focus = 40,
+      width_nofocus = 20,
+      width_preview = 50,
     },
     options = {
       use_as_default_explorer = false,
