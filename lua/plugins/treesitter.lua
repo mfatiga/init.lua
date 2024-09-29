@@ -1,6 +1,7 @@
 return {
   -- Highlight, edit, navigate
   'nvim-treesitter/nvim-treesitter',
+  version = false,
   build = ':TSUpdate',
   dependencies = {
     -- Additional text objects via treesitter
