@@ -37,6 +37,34 @@ Here is a list of some of the custom binds and commands.
 | `:Mason` | Language server management |
 
 
+### Text-objects
+Using mini.ai for extended textobjects.
+ - defines mappings for both `a` and `i` in `v` and `o` mode
+
+Default textobject is activated for identifiers from digits (0, ..., 9), punctuation (like `_`, `*`, `,`, etc.), whitespace (space, tab, etc.)
+
+| Key |      Name                   |
+| --- | ---------------             |
+| `(` | Balanced ()                 |
+| `[` | Balanced []                 |
+| `{` | Balanced {}                 |
+| `<` | Balanced <>                 |
+| `)` | Balanced ()                 |
+| `]` | Balanced []                 |
+| `}` | Balanced {}                 |
+| `>` | Balanced <>                 |
+| `b` | Alias for ),],}             |
+| `"` | Balanced "                  |
+| `'` | Balanced '                  |
+|  `  | Balanced `                  |
+| `q` | Alias for ",',`             |
+| `?` | User prompt (typed e and o) |
+| `t` | Tag                         |
+| `f` | Function call               |
+| `a` | Argument                    |
+|     | Default                     |
+
+
 ### General
 
 | Mode | Keys        | Description                                     |
@@ -68,22 +96,7 @@ Here is a list of some of the custom binds and commands.
 | n/x/o | `S`        | Flash - treesitter                 |
 | o     | `r`        | Flash - remote (in o-pending mode) |
 | o/x   | `R`        | Flash - treesitter search          |
-| c     | `<Ctrl-s>` | Toggle Flash Search"               |
-
-
-### File management
-
-| Mode | Keys        | Description                |
-| ---- | ----------- | -------------------------- |
-| n    | `<Space>tt` | [T]ree [t]oggle            |
-| n    | `<Space>to` | [T]ree [o]pen and focus    |
-| n    | `<Space>tc` | [T]ree [c]lose             |
-| n    | `<Space>f`  | mini.files - file dir      |
-| n    | `<Space>F`  | mini.files - project dir   |
-| n    | `<Space>-`  | oil.nvim file mgr          |
-| n    | `-`         | oil.nvim file mgr floating |
-| n    | `q`         | oil.nvim file mgr close    |
-| n    | `<Space>lg` | open lazygit floating      |
+| c     | `<Ctrl-s>` | Toggle Flash Search                |
 
 
 ### Telescope
@@ -149,3 +162,18 @@ Here is a list of some of the custom binds and commands.
 | n    | `<Space>e` | Open diagnostics loclist |
 | n    | `[d`       | Diagnostic goto prev     |
 | n    | `]d`       | Diagnostic goto next     |
+
+
+### File management
+
+| Mode | Keys        | Description                |
+| ---- | ----------- | -------------------------- |
+| n    | `<Space>tt` | [T]ree [t]oggle            |
+| n    | `<Space>to` | [T]ree [o]pen and focus    |
+| n    | `<Space>tc` | [T]ree [c]lose             |
+| n    | `<Space>f`  | mini.files - file dir      |
+| n    | `<Space>F`  | mini.files - project dir   |
+| n    | `<Space>-`  | oil.nvim file mgr          |
+| n    | `-`         | oil.nvim file mgr floating |
+| n    | `q`         | oil.nvim file mgr close    |
+| n    | `<Space>lg` | open lazygit floating      |
