@@ -2,11 +2,10 @@
 
 ![Lua autocomplete](screens/screen1.png)
 
-Combined ideas and configs from [ThePrimeagen](https://github.com/ThePrimeagen/init.lua) and [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim)
-
 Clone into `.config/nvim` and start NeoVim.
 Dependencies:
  - fzf
+ - fd
  - luarocks
  - lazygit
 
@@ -17,13 +16,12 @@ Features:
  - lsp with autocomplete
  - language server management integration using mason
  - treesitter for code analysis and coloring
- - undotree for undo history
  - lualine for bottom status line
  - using gruvbox-material theme for all
 
 ## Customization
  - configure LSP servers at the top of [lua/plugins/lsp.lua](lua/plugins/lsp.lua)
- - configure theme settings in [lua/plugins/init.lua](lua/plugins/theme.lua)
+ - configure theme settings in [lua/plugins/init.lua](lua/plugins/init.lua)
  - set lualine theme in [lua/plugins/lualine.lua](lua/plugins/lualine.lua)
 
 
@@ -32,6 +30,7 @@ Here is a list of some of the custom binds and commands.
 
 
 ## Commands
+
 | Command  | Description                |
 | -------- | -------------------------- |
 | `:Lazy`  | Plugin management          |
@@ -58,9 +57,11 @@ Here is a list of some of the custom binds and commands.
 | n    | `<Space>bd` | Delete current buffer                           |
 | n    | `<Space>bD` | Force delete current buffer                     |
 | n    | `<Space>zz` | Zen-Mode                                        |
+| n    | `<Space>?`  | Buffer Local Keymaps (which-key)                |
 
 
 ### Movement
+
 | Mode  | Keys       | Description                        |
 | ----- | ---------- | ---------------------------------- |
 | n/x/o | `s`        | Flash - jump                       |
