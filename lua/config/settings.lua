@@ -33,3 +33,6 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 250
 
 vim.o.completeopt = 'menuone,noselect'
+
+vim.o.timeout = true
+vim.o.timeoutlen = 300
