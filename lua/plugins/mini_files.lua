@@ -1,6 +1,6 @@
 return {
   'echasnovski/mini.files',
-  version = '*',
+  version = false,
   opts = {
     -- Use `''` (empty string) to not create one.
     mappings = {
