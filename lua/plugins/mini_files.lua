@@ -18,14 +18,15 @@ return {
       trim_left   = '<',
       trim_right  = '>',
     },
+    options = {
+      permanent_delete = true,
+      use_as_default_explorer = false,
+    },
     windows = {
       preview = true,
       width_focus = 40,
       width_nofocus = 20,
       width_preview = 50,
-    },
-    options = {
-      use_as_default_explorer = false,
     },
   },
   keys = {
