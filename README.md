@@ -45,6 +45,7 @@ Default textobject is activated for identifiers from digits (0, ..., 9), punctua
 
 | Key |      Name                   |
 | --- | ---------------             |
+|     | Default                     |
 | `(` | Balanced ()                 |
 | `[` | Balanced []                 |
 | `{` | Balanced {}                 |
@@ -62,7 +63,6 @@ Default textobject is activated for identifiers from digits (0, ..., 9), punctua
 | `t` | Tag                         |
 | `f` | Function call               |
 | `a` | Argument                    |
-|     | Default                     |
 
 
 ### General
