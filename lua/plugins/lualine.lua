@@ -51,6 +51,8 @@ return {
       lualine_x = {
         'encoding',
         'fileformat',
+      },
+      lualine_y = {
         {
           'filetype',
           colored = true,
@@ -58,8 +60,23 @@ return {
           icon = { align = 'right' },
         }
       },
-      lualine_y = {'progress'},
-      lualine_z = {'location'}
+      lualine_z = {
+        {
+          'searchcount',
+          maxcount = 999,
+          timeout = 500,
+          icon = { ' ', align = 'left' },
+          padding = { left = 1, right = 1 }
+        },
+        {
+          'progress',
+          padding = { left = 1, right = 1 }
+        },
+        {
+          'location',
+          padding = { left = 1, right = 1 }
+        },
+      },
     },
     tabline = {
       lualine_a = {'buffers'},
