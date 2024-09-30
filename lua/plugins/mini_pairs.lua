@@ -37,7 +37,6 @@ local function configure_mini_pairs(opts)
   end
 end
 
-
 return {
   "echasnovski/mini.pairs",
   version = false,
