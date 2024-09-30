@@ -1,8 +1,10 @@
 return {
   'stevearc/oil.nvim',
+  ---@module 'oil'
+  ---@type oil.SetupOpts
   opts = {
     default_file_explorer = false,
-    columns = { "icon" },
+    columns = { "icon", },
     keymaps = {
       ["g?"] = "actions.show_help",
       ["<CR>"] = "actions.select",
