@@ -41,3 +41,5 @@ vim.keymap.set("n", "<leader>bx", "<cmd>bd<CR><cmd>bn<CR>", { desc = 'Delete buf
 vim.keymap.set("n", "<leader>bX", "<cmd>bd!<CR><cmd>bn<CR>", { desc = 'Force delete buffer and goto next' })
 vim.keymap.set("n", "<leader>bd", "<cmd>bd<CR>", { desc = 'Delete buffer' })
 vim.keymap.set("n", "<leader>bD", "<cmd>bd!<CR>", { desc = 'Force delete buffer' })
+-- Switch alt buffer
+vim.keymap.set("n", "<leader><CR>", "<cmd>e #<CR>", { desc = 'Alternate buffer' })
