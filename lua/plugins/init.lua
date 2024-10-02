@@ -1,12 +1,12 @@
 return {
   -- Library used by other plugins
-  { "nvim-lua/plenary.nvim", lazy = true },
+  { 'nvim-lua/plenary.nvim', lazy = true },
 
   -- Theme
   {
     'sainnhe/gruvbox-material',
-    lazy = false, -- make sure we load on startup
-    priority = 1000, -- make sure to load immediately
+    lazy = false,
+    priority = 1000,
     config = function()
       vim.opt.termguicolors = true
       vim.o.background = "dark"
