@@ -31,6 +31,8 @@ return {
       },
       pickers = {
         buffers = {
+          sort_mru = true,
+          sort_lastused = false,
           mappings = {
             i = {
               ["<C-d>"] = actions.delete_buffer + actions.move_to_top
