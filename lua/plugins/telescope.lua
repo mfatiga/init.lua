@@ -13,8 +13,15 @@ return {
     { 'debugloop/telescope-undo.nvim' },
   },
   config = function()
+    local actions = require("telescope.actions")
+    local themes = require("telescope.themes")
     require('telescope').setup {
-      defaults = {
+      defaults = themes.get_ivy {
+        layout_config = {
+          height = function(_, _, max_lines)
+            return math.floor(max_lines * 0.6)
+          end,
+        },
         mappings = {
           i = {
             ['<C-u>'] = false,
@@ -22,9 +29,18 @@ return {
           },
         },
       },
+      pickers = {
+        buffers = {
+          mappings = {
+            i = {
+              ["<C-d>"] = actions.delete_buffer + actions.move_to_top
+            },
+          },
+        },
+      },
       extensions = {
         ['ui-select'] = {
-          require('telescope.themes').get_dropdown(),
+          themes.get_dropdown(),
         },
         ['undo'] = {
           side_by_side = true,
