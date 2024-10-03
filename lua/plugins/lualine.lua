@@ -41,7 +41,18 @@ return {
           end
         }
       },
-      lualine_b = {'branch', 'diff', 'diagnostics'},
+      lualine_b = {
+        'branch',
+        {
+          'diff',
+          symbols = {
+            added    = " ",
+            modified = " ",
+            removed  = " ",
+          },
+        },
+        'diagnostics'
+      },
       lualine_c = {
         {
           'filename',
