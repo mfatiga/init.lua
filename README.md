@@ -178,3 +178,11 @@ Default textobject is activated for identifiers from digits (0, ..., 9), punctua
 | n    | `-`         | oil.nvim file mgr floating |
 | n    | `q`         | oil.nvim file mgr close    |
 | n    | `<Space>lg` | open lazygit floating      |
+
+
+### Markdown
+
+| Mode | Keys | Description               |
+| ---- | ---- | ------------------------- |
+| n    | `mt` | (M)arkdown preview toggle |
+| n    | `ms` | (M)arkdown split toggle   |
