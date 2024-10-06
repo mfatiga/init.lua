@@ -20,7 +20,7 @@ Features:
  - customizable theme
 
 ## Customization
- - set theme in [config.lua](config.lua)
+ - set theme in [lua/config.lua](lua/config.lua)
  - create/override theme settings in [lua/themes/](lua/themes/)
  - configure LSP servers at the top of [lua/plugins/lsp.lua](lua/plugins/lsp.lua)
 
