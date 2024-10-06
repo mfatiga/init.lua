@@ -104,19 +104,19 @@ Default textobject is activated for identifiers from digits (0, ..., 9), punctua
 
 | Mode | Keys             | Description                           |
 | ---- | ---------------- | ------------------------------------- |
-| n    | `<Space><Space>` | [ ] Find existing buffers             |
-| n    | `<Space>sf`      | [S]earch [F]iles                      |
-| n    | `<Space>sg`      | [S]earch [G]it files                  |
-| n    | `<Space>sr`      | [S]earch by G[r]ep                    |
-| n    | `<Space>s.`      | [?] Find recently opened files        |
-| n    | `<Space>sw`      | [S]earch current [W]ord               |
-| n    | `<Space>sd`      | [S]earch [D]iagnostics                |
-| n    | `<Space>st`      | [S]earch [T]ODOs                      |
-| n    | `<Space>sn`      | [S]earch [N]oice/[N]otifications      |
-| n    | `<Space>sh`      | [S]earch [H]elp                       |
-| n    | `<Space>sk`      | [S]earch [K]eymaps                    |
-| n    | `<Space>su`      | [S]earch [U]ndo-tree                  |
-| n    | `<Space>/`       | [/] Fuzzily search in current buffer] |
+| n    | `<Space><Space>` | ( ) Search buffers                    |
+| n    | `<Space>sf`      | (S)earch (F)iles                      |
+| n    | `<Space>sg`      | (S)earch (G)it files                  |
+| n    | `<Space>sr`      | (S)earch by G(r)ep                    |
+| n    | `<Space>s.`      | (.) Search recently opened files      |
+| n    | `<Space>sw`      | (S)earch current (W)ord               |
+| n    | `<Space>sd`      | (S)earch (D)iagnostics                |
+| n    | `<Space>st`      | (S)earch (T)ODOs                      |
+| n    | `<Space>sn`      | (S)earch (N)oice/(N)otifications      |
+| n    | `<Space>sh`      | (S)earch (H)elp                       |
+| n    | `<Space>sk`      | (S)earch (K)eymaps                    |
+| n    | `<Space>su`      | (S)earch (U)ndo-tree                  |
+| n    | `<Space>/`       | (/) Fuzzily search in current buffer  |
 
 
 ### LSP
@@ -127,20 +127,20 @@ Default textobject is activated for identifiers from digits (0, ..., 9), punctua
 
 | Mode | Keys        | Description                 |
 | ---- | ----------- | --------------------------- |
-| n    | `<Space>rn` | [R]e[n]ame                  |
-| n    | `<Space>ca` | [C]ode [A]ction             |
-| n    | `gd`        | [G]oto [D]efinition         |
-| n    | `gr`        | [G]oto [R]eferences         |
-| n    | `gI`        | [G]oto [I]mplementation     |
-| n    | `<Space>D`  | Type [D]efinition           |
-| n    | `<Space>ds` | [D]ocument [S]ymbols        |
-| n    | `<Space>ws` | [W]orkspace [S]ymbols       |
+| n    | `<Space>rn` | (R)e(n)ame                  |
+| n    | `<Space>ca` | (C)ode (A)ction             |
+| n    | `gd`        | (G)oto (D)efinition         |
+| n    | `gr`        | (G)oto (R)eferences         |
+| n    | `gI`        | (G)oto (I)mplementation     |
+| n    | `<Space>D`  | Type (D)efinition           |
+| n    | `<Space>ds` | (D)ocument (S)ymbols        |
+| n    | `<Space>ws` | (W)orkspace (S)ymbols       |
 | n    | `K`         | Hover Documentation         |
 | n    | `<Ctrl-k>`  | Signature Documentation     |
-| n    | `gD`        | [G]oto [D]eclaration        |
-| n    | `<Space>wa` | [W]orkspace [A]dd Folder    |
-| n    | `<Space>wr` | [W]orkspace [R]emove Folder |
-| n    | `<Space>wl` | [W]orkspace [L]ist Folders  |
+| n    | `gD`        | (G)oto (D)eclaration        |
+| n    | `<Space>wa` | (W)orkspace (A)dd Folder    |
+| n    | `<Space>wr` | (W)orkspace (R)emove Folder |
+| n    | `<Space>wl` | (W)orkspace (L)ist Folders  |
 
 
 ### Autocomplete
@@ -169,9 +169,9 @@ Default textobject is activated for identifiers from digits (0, ..., 9), punctua
 
 | Mode | Keys        | Description                |
 | ---- | ----------- | -------------------------- |
-| n    | `<Space>tt` | [T]ree [t]oggle            |
-| n    | `<Space>to` | [T]ree [o]pen and focus    |
-| n    | `<Space>tc` | [T]ree [c]lose             |
+| n    | `<Space>tt` | (T)ree (t)oggle            |
+| n    | `<Space>to` | (T)ree (o)pen and focus    |
+| n    | `<Space>tc` | (T)ree (c)lose             |
 | n    | `<Space>f`  | mini.files - file dir      |
 | n    | `<Space>F`  | mini.files - project dir   |
 | n    | `<Space>-`  | oil.nvim file mgr          |
