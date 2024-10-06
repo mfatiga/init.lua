@@ -2,7 +2,6 @@ return {
   spec = {
     'rebelot/kanagawa.nvim',
     opts = {
-      theme = "wave",
       colors = {
         theme = {
           all = {
@@ -14,14 +13,12 @@ return {
       },
     },
     config = function(_, opts)
-      vim.opt.termguicolors = true
-      vim.o.background = ""
       require("kanagawa").setup(opts)
-      vim.cmd [[colorscheme kanagawa]]
+      vim.cmd [[colorscheme kanagawa-wave]]
     end
   },
   extras = {
-    lazy_install = 'kanagawa',
+    lazy_install = 'kanagawa-wave',
     lualine = 'kanagawa'
   }
 }

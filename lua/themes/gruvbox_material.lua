@@ -2,7 +2,6 @@ return {
   spec = {
     'sainnhe/gruvbox-material',
     config = function()
-      vim.opt.termguicolors = true
       vim.o.background = "dark"
       vim.g.gruvbox_material_background = "hard"
       vim.g.gruvbox_material_foreground = "original"
