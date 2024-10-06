@@ -21,7 +21,7 @@ require("lazy").setup({
     { import = "plugins" },
   },
   -- colorscheme that will be used when installing plugins.
-  install = { colorscheme = { "gruvbox-material" } },
+  install = { colorscheme = { LeetVim.theme.extras.lazy_install } },
 
   -- automatically check for plugin updates
   checker = {

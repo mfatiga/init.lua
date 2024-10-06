@@ -17,12 +17,12 @@ Features:
  - language server management integration using mason
  - treesitter for code analysis and coloring
  - lualine for bottom status line
- - using gruvbox-material theme for all
+ - customizable theme
 
 ## Customization
+ - set theme in [config.lua](config.lua)
+ - create/override theme settings in [lua/themes/](lua/themes/)
  - configure LSP servers at the top of [lua/plugins/lsp.lua](lua/plugins/lsp.lua)
- - configure theme settings in [lua/plugins/init.lua](lua/plugins/init.lua)
- - set lualine theme in [lua/plugins/lualine.lua](lua/plugins/lualine.lua)
 
 
 ## Keybinds and commands

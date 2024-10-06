@@ -3,19 +3,5 @@ return {
   { 'nvim-lua/plenary.nvim', lazy = true },
 
   -- Theme
-  {
-    'sainnhe/gruvbox-material',
-    lazy = false,
-    priority = 1000,
-    config = function()
-      vim.opt.termguicolors = true
-      vim.o.background = "dark"
-      vim.g.gruvbox_material_background = "hard"
-      vim.g.gruvbox_material_foreground = "original"
-      vim.g.gruvbox_material_better_performance = true
-      vim.g.gruvbox_material_enable_bold = true
-      vim.g.gruvbox_material_enable_italic = true
-      vim.cmd [[colorscheme gruvbox-material]]
-    end,
-  },
+  vim.tbl_extend('force', LeetVim.theme.spec, { lazy=false, priority = 1000 })
 }

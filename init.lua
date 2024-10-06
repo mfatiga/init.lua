@@ -1,11 +1,6 @@
--- Settings
-require("config.settings")
-
--- Remaps
-require("config.remaps")
-
--- AutoCMDs
-require("config.autocmds")
-
--- Initialize plugins
-require("config.lazy")
+-- Global
+_G.LeetVim = require("config")
+require("base.settings")
+require("base.remaps")
+require("base.autocmds")
+require("base.lazy")

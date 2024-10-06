@@ -24,7 +24,7 @@ return {
     options = {
       globalstatus = true,
       icons_enabled = true,
-      theme = 'gruvbox-material',
+      theme = LeetVim.theme.extras.lualine,
       disabled_filetypes = { "ministarter", "alpha" }
     },
     extensions = {
