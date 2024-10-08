@@ -17,67 +17,6 @@ local servers = {
   },
 }
 
-local function setup_autocomplete(capabilities)
-  -- nvim-cmp setup
-  local cmp = require('cmp')
-  local luasnip = require('luasnip')
-
-  cmp.setup {
-    snippet = {
-      expand = function(args)
-        luasnip.lsp_expand(args.body)
-      end,
-    },
-    mapping = cmp.mapping.preset.insert {
-      ['<C-d>'] = cmp.mapping.scroll_docs(-4),
-      ['<C-f>'] = cmp.mapping.scroll_docs(4),
-      ['<C-Space>'] = cmp.mapping.complete(),
-      ['<CR>'] = cmp.mapping.confirm {
-        behavior = cmp.ConfirmBehavior.Replace,
-        select = true,
-      },
-      ['<Tab>'] = cmp.mapping(function(fallback)
-        if cmp.visible() then
-          cmp.select_next_item()
-        elseif luasnip.expand_or_jumpable() then
-          luasnip.expand_or_jump()
-        else
-          fallback()
-        end
-      end, { 'i', 's' }),
-      ['<S-Tab>'] = cmp.mapping(function(fallback)
-        if cmp.visible() then
-          cmp.select_prev_item()
-        elseif luasnip.jumpable(-1) then
-          luasnip.jump(-1)
-        else
-          fallback()
-        end
-      end, { 'i', 's' }),
-    },
-    sources = {
-      { name = 'nvim_lsp' },
-      { name = 'luasnip' },
-    },
-  }
-
-  cmp.setup.cmdline(':', {
-    mapping = cmp.mapping.preset.cmdline(),
-    sources = cmp.config.sources({
-      { name = 'path' }
-    }, {
-      {
-        name = 'cmdline',
-        option = {
-          ignore_cmds = { 'Man', '!' }
-        }
-      }
-    })
-  })
-
-  return require('cmp_nvim_lsp').default_capabilities(capabilities)
-end
-
 return {
   {
      -- LSP and Autocomplete
@@ -86,30 +25,6 @@ return {
       -- LSP installer
       {'williamboman/mason.nvim'},           -- Optional
       {'williamboman/mason-lspconfig.nvim'}, -- Optional
-
-      -- Autocompletion
-      {
-        'hrsh7th/nvim-cmp',
-        -- nvim dev
-        opts = function (_, opts)
-          -- completion source for require statements and module annotations
-          opts.sources = opts.sources or {}
-          table.insert(opts.sources, {
-            name = "lazydev",
-            group_index = 0, -- set group index to 0 to skip loading LuaLS completions
-          })
-        end
-      },         -- Required
-      {'hrsh7th/cmp-nvim-lsp'},     -- Required
-      {'hrsh7th/cmp-buffer'},       -- Optional
-      {'hrsh7th/cmp-path'},         -- Optional
-      {'hrsh7th/cmp-cmdline'},      -- Optional
-      {'hrsh7th/cmp-nvim-lua'},     -- Optional
-      {'saadparwaiz1/cmp_luasnip'}, -- Optional
-
-      -- Snippets
-      {'L3MON4D3/LuaSnip'},             -- Required
-      {'rafamadriz/friendly-snippets'}, -- Optional
     },
     config = function()
       -- Diagnostic keymaps
@@ -157,7 +72,6 @@ return {
 
       -- Autocomplete setup
       local capabilities = vim.lsp.protocol.make_client_capabilities()
-      capabilities = setup_autocomplete(capabilities)
 
       -- Initialize mason and attach server config handlers
       require('mason').setup()
@@ -185,6 +99,7 @@ return {
   },
 
   -- nvim dev
+  -- TODO: check integration with blink_cmp
   {
     "folke/lazydev.nvim",
     ft = "lua", -- only load on lua files

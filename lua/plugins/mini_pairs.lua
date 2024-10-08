@@ -40,6 +40,8 @@ end
 return {
   "echasnovski/mini.pairs",
   version = false,
+  -- TODO: enable when 'accept' keymap fixed in blink.cmp
+  enabled = false,
   event = "VeryLazy",
   opts = {
     modes = { insert = true, command = false, terminal = false },

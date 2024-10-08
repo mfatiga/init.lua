@@ -147,10 +147,11 @@ Default textobject is activated for identifiers from digits (0, ..., 9), punctua
 
 | Keys           | Description                |
 | -------------- | -------------------------- |
-| `<Ctrl-d>`     | Scroll docs -4             |
-| `<Ctrl-f>`     | Scroll docs +4             |
+| `<Ctrl-d>`     | Scroll docs up             |
+| `<Ctrl-f>`     | Scroll docs down           |
 | `<Ctrl-Space>` | Show autocomplete dialog   |
-| `<Enter>`      | Confirm autocomplete       |
+| `<Ctrl-e>`     | Close autocomplete dialog  |
+| `<Enter>`      | Accept autocomplete        |
 | `<Tab>`        | Next item / Snip next jump |
 | `<Shift-Tab>`  | Prev item / Snip prev jump |
 
