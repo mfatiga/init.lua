@@ -14,8 +14,8 @@ return {
 
       show_documentation = {},
       hide_documentation = {},
-      scroll_documentation_up = '<C-d>',
-      scroll_documentation_down = '<C-f>',
+      scroll_documentation_up = '<C-f>',
+      scroll_documentation_down = '<C-d>',
 
       snippet_forward = '<Tab>',
       snippet_backward = '<S-Tab>',
