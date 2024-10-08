@@ -1,18 +1,17 @@
 return {
   {
-     -- LSP and Autocomplete
     'neovim/nvim-lspconfig',
     dependencies = {
       -- LSP installer
-      {'williamboman/mason.nvim'},           -- Optional
-      {'williamboman/mason-lspconfig.nvim'}, -- Optional
+      { 'williamboman/mason.nvim' },         -- Optional
+      { 'williamboman/mason-lspconfig.nvim' }, -- Optional
     },
     config = function()
       -- Diagnostic keymaps
       vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Diagnostic previous' })
       vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Diagnostic next' })
-      vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Diagnostic Open Float'})
-      vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Diagnostic Set Loclist'})
+      vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Diagnostic Open Float' })
+      vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Diagnostic Set Loclist' })
 
       -- LSP on_attach
       local on_attach = function(_, bufnr)
@@ -73,7 +72,7 @@ return {
 
           local override_cfg = servers[server]
           if (override_cfg ~= nil) then
-            for k,v in pairs(servers[server]) do cfg[k] = v end
+            for k, v in pairs(servers[server]) do cfg[k] = v end
           end
 
           require('lspconfig')[server].setup(cfg)
