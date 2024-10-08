@@ -33,7 +33,7 @@ return {
     },
     windows = {
       autocomplete = {
-        border = 'single',
+        border = 'none',
         draw = 'reversed'
       },
       documentation = {
