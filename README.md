@@ -19,10 +19,15 @@ Features:
  - lualine for bottom status line
  - customizable theme
 
+
+## TODO
+ - replace alpha.nvim with mini.starter
+
+
 ## Customization
+ - configure LSP servers in [lua/config.lua](lua/config.lua)
  - set theme in [lua/config.lua](lua/config.lua)
  - create/override theme settings in [lua/themes/](lua/themes/)
- - configure LSP servers at the top of [lua/plugins/lsp.lua](lua/plugins/lsp.lua)
 
 
 ## Keybinds and commands
