@@ -1,22 +1,3 @@
--- Language servers
-local servers = {
-  pyright = {},
-  elixirls = {},
-  rust_analyzer = {},
-  hls = {
-      filetypes = { 'haskell', 'lhaskell', 'cabal' },
-  },
-  gopls ={},
-  lua_ls = {
-    settings = {
-        Lua = {
-          workspace = { checkThirdParty = false },
-          telemetry = { enable = false },
-        },
-    },
-  },
-}
-
 return {
   {
      -- LSP and Autocomplete
@@ -72,6 +53,9 @@ return {
 
       -- Autocomplete setup
       local capabilities = vim.lsp.protocol.make_client_capabilities()
+
+      -- Servers
+      local servers = LeetVim.language_servers
 
       -- Initialize mason and attach server config handlers
       require('mason').setup()
