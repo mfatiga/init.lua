@@ -163,23 +163,23 @@ return {
       require('mason').setup()
       local mason_lspconfig = require('mason-lspconfig')
       mason_lspconfig.setup {
-          ensure_installed = vim.tbl_keys(servers),
+        ensure_installed = vim.tbl_keys(servers),
       }
       mason_lspconfig.setup_handlers {
-          function(server)
-              local cfg = {
-                  capabilities = capabilities,
-                  on_attach = on_attach,
-                  settings = {},
-              }
+        function(server)
+          local cfg = {
+            capabilities = capabilities,
+            on_attach = on_attach,
+            settings = {},
+          }
 
-              local override_cfg = servers[server]
-              if (override_cfg ~= nil) then
-                  for k,v in pairs(servers[server]) do cfg[k] = v end
-              end
+          local override_cfg = servers[server]
+          if (override_cfg ~= nil) then
+            for k,v in pairs(servers[server]) do cfg[k] = v end
+          end
 
-              require('lspconfig')[server].setup(cfg)
-          end,
+          require('lspconfig')[server].setup(cfg)
+        end,
       }
     end
   },
