@@ -126,9 +126,9 @@ Default textobject is activated for identifiers from digits (0, ..., 9), punctua
 
 ### LSP
 
-| Command   | Description                    |
-| --------- | ------------------------------ |
-| `:Format` | Format current buffer with LSP |
+| Command      | Description                    |
+| ------------ | ------------------------------ |
+| `:FormatLSP` | Format current buffer with LSP |
 
 | Mode | Keys        | Description                 |
 | ---- | ----------- | --------------------------- |
