@@ -7,7 +7,6 @@ local servers = {
       filetypes = { 'haskell', 'lhaskell', 'cabal' },
   },
   gopls ={},
-
   lua_ls = {
     settings = {
         Lua = {
@@ -22,8 +21,6 @@ return {
   {
      -- LSP and Autocomplete
     'neovim/nvim-lspconfig',
-    --TODO: check lazy load
-    -- event = { "BufReadPost", "BufNewFile", "BufWritePre" },
     dependencies = {
       -- LSP installer
       {'williamboman/mason.nvim'},           -- Optional
