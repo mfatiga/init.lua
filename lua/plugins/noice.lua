@@ -16,6 +16,10 @@ return {
       view_history = "messages",
       view_search = false
     },
+    popupmenu = {
+      enabled = true,
+      backend = "nui"
+    },
     lsp = {
       progress = {
         enabled = true,
