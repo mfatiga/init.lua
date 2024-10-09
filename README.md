@@ -140,8 +140,9 @@ Default textobject is activated for identifiers from digits (0, ..., 9), punctua
 | n    | `<Space>D`  | Type (D)efinition           |
 | n    | `<Space>ds` | (D)ocument (S)ymbols        |
 | n    | `<Space>ws` | (W)orkspace (S)ymbols       |
-| n    | `K`         | Hover Documentation         |
-| n    | `<Ctrl-k>`  | Signature Documentation     |
+| n    | `K`         | Hover                       |
+| n    | `gK`        | Signature Documentation     |
+| i    | `<Ctrl-k>`  | Signature Documentation     |
 | n    | `gD`        | (G)oto (D)eclaration        |
 | n    | `<Space>wa` | (W)orkspace (A)dd Folder    |
 | n    | `<Space>wr` | (W)orkspace (R)emove Folder |
