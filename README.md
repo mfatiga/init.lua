@@ -91,7 +91,7 @@ Default textobject is activated for identifiers from digits (0, ..., 9), punctua
 | n    | `<Space>bD`  | Force delete current buffer                     |
 | n    | `<Space><CR>`| Alternate buffer (:e #)                         |
 | n    | `<Space>zz`  | Zen-Mode                                        |
-| n    | `<Space>?`   | Buffer Local Keymaps (which-key)                |
+| n    | `<Space>?`   | Buffer Local Keymaps                            |
 
 
 ### Movement
