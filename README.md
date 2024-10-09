@@ -173,17 +173,18 @@ Default textobject is activated for identifiers from digits (0, ..., 9), punctua
 
 ### File management
 
-| Mode | Keys        | Description                |
-| ---- | ----------- | -------------------------- |
-| n    | `<Space>tt` | (T)ree (t)oggle            |
-| n    | `<Space>to` | (T)ree (o)pen and focus    |
-| n    | `<Space>tc` | (T)ree (c)lose             |
-| n    | `<Space>f`  | mini.files - file dir      |
-| n    | `<Space>F`  | mini.files - project dir   |
-| n    | `<Space>-`  | oil.nvim file mgr          |
-| n    | `-`         | oil.nvim file mgr floating |
-| n    | `q`         | oil.nvim file mgr close    |
-| n    | `<Space>lg` | open lazygit floating      |
+| Mode | Keys        | Description                    |
+| ---- | ----------- | ------------------------------ |
+| n    | `<Space>tt` | (T)ree (t)oggle                |
+| n    | `<Space>to` | (T)ree (o)pen and focus        |
+| n    | `<Space>tc` | (T)ree (c)lose                 |
+| n    | `<Space>ff` | mini.files - file dir          |
+| n    | `<Space>fd` | mini.files - file dir expanded |
+| n    | `<Space>fp` | mini.files - project dir       |
+| n    | `<Space>-`  | oil.nvim file mgr              |
+| n    | `-`         | oil.nvim file mgr floating     |
+| n    | `q`         | oil.nvim file mgr close        |
+| n    | `<Space>lg` | open lazygit floating          |
 
 
 ### Markdown

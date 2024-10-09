@@ -1,3 +1,27 @@
+local disabled_filetypes = { 'NvimTree' }
+
+local function mini_files_open_parent(reveal_cwd, use_latest, cwd_fallback)
+  local filetype = vim.api.nvim_get_option_value('filetype', { buf = 0 })
+  local is_valid_filetype = not vim.tbl_contains(disabled_filetypes, filetype)
+
+  local path = nil
+  if is_valid_filetype then
+    path = vim.api.nvim_buf_get_name(0)
+  elseif cwd_fallback then
+    path = vim.uv.cwd()
+  else
+    return
+  end
+
+  local MiniFiles = require("mini.files")
+  local _ = MiniFiles.close() or MiniFiles.open(path, use_latest)
+  if reveal_cwd then
+    vim.schedule(function()
+      MiniFiles.reveal_cwd()
+    end)
+  end
+end
+
 return {
   'echasnovski/mini.files',
   version = false,
@@ -31,18 +55,22 @@ return {
   },
   keys = {
     {
-      "<leader>f",
-      function()
-        require("mini.files").open(vim.api.nvim_buf_get_name(0), true)
-      end,
-      desc = "Open mini.files (Directory of Current File)",
+      "<leader>ff",
+      function() mini_files_open_parent(false, false, true) end,
+      desc = "Open mini.files (dir of file)",
     },
     {
-      "<leader>F",
+      "<leader>fd",
+      function() mini_files_open_parent(true, false, true) end,
+      desc = "Open mini.files (reveal CWD path)",
+    },
+    {
+      "<leader>fp",
       function()
-        require("mini.files").open(vim.uv.cwd(), true)
+        local MiniFiles = require("mini.files")
+        local _ = MiniFiles.close() or MiniFiles.open(vim.uv.cwd(), false)
       end,
-      desc = "Open mini.files (cwd)",
+      desc = "Open mini.files (CWD)",
     },
   }
 }
