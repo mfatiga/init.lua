@@ -37,7 +37,7 @@ return {
         draw = 'reversed'
       },
       documentation = {
-        border = 'single',
+        border = 'none',
       },
     },
     highlight = {

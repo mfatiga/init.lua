@@ -19,6 +19,6 @@ return {
   },
   extras = {
     lazy_install = 'kanagawa-wave',
-    lualine = 'kanagawa'
-  }
+    lualine = 'kanagawa',
+  },
 }

@@ -14,5 +14,5 @@ return {
   extras = {
     lazy_install = 'gruvbox-material',
     lualine = 'gruvbox-material'
-  }
+  },
 }
