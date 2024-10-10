@@ -3,6 +3,11 @@ return {
   'nvim-treesitter/nvim-treesitter',
   version = false,
   build = ':TSUpdate',
+
+  -- TODO: check treesitter lazy-load
+  -- event = { "BufReadPost", "BufNewFile" },
+  -- cmd = { "TSInstall", "TSBufEnable", "TSBufDisable", "TSModuleInfo" },
+
   dependencies = {
     -- Additional text objects via treesitter
     'nvim-treesitter/nvim-treesitter-textobjects',
