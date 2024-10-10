@@ -2,6 +2,19 @@ return {
   -- Zen mode
   {
     "folke/zen-mode.nvim",
+    cmd = { "ZenMode" },
+    keys = {
+      { "<leader>zz", "<cmd>ZenMode<CR>", desc = 'Toggle [Z]en mode' },
+    },
+    dependencies = {
+      -- Gray out non-important lines in zen mode
+      {
+        "folke/twilight.nvim",
+        opts = {
+          context = 20,
+        },
+      },
+    },
     opts = {
       window = {
         backdrop = 0.955,
@@ -23,17 +36,6 @@ return {
         require("todo-comments").enable()
         vim.cmd("silent! IBLEnable")
       end
-    },
-    config = function (_, opts)
-      require("zen-mode").setup(opts)
-      vim.keymap.set("n", "<leader>zz", function () require("zen-mode").toggle() end, { desc = 'Toggle [Z]en mode' })
-    end
-  },
-  -- Gray out non-important lines in zen mode
-  {
-    "folke/twilight.nvim",
-    opts = {
-      context = 20,
     },
   },
 }
