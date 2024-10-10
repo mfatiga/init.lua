@@ -12,6 +12,23 @@ return {
     { 'nvim-telescope/telescope-ui-select.nvim' },
     { 'debugloop/telescope-undo.nvim' },
   },
+  cmd = { "Telescope" },
+  keys = {
+    -- See `:help telescope.builtin`
+    { '<leader><leader>', "<cmd>Telescope buffers<CR>",  desc = '[ ] Find existing buffers' },
+    { '<leader>sf', "<cmd>Telescope find_files<CR>", desc = '[S]earch [F]iles' },
+    { '<leader>sg', "<cmd>Telescope git_files<CR>", desc = '[S]earch [G]it files' },
+    { '<leader>sh', "<cmd>Telescope help_tags<CR>", desc = '[S]earch [H]elp' },
+    { '<leader>sw', "<cmd>Telescope grep_string<CR>", desc = '[S]earch current [W]ord' },
+    { '<leader>sr', "<cmd>Telescope live_grep<CR>", desc = '[S]earch by G[r]ep' },
+    { '<leader>sd', "<cmd>Telescope diagnostics<CR>", desc = '[S]earch [D]iagnostics' },
+    { '<leader>sk', "<cmd>Telescope keymaps<CR>", desc = '[S]earch [K]eymaps' },
+    { '<leader>s.', "<cmd>Telescope oldfiles<CR>", desc = '[S]earch Recent Files ("." for repeat)' },
+    { '<leader>/',  "<cmd>Telescope current_buffer_fuzzy_find<CR>", desc = '[/] Fuzzily search in current buffer' },
+
+    -- extension mappings
+    { '<leader>su', "<cmd>Telescope undo<CR>", desc = '[S]earch [U]ndo-tree' },
+  },
   config = function()
     local actions = require("telescope.actions")
     local themes = require("telescope.themes")
@@ -45,13 +62,8 @@ return {
           themes.get_dropdown(),
         },
         ['undo'] = {
-          side_by_side = true,
-          layout_strategy = "vertical",
-          layout_config = {
-            preview_height = 0.8,
-          },
           vim_diff_opts = {
-            ctxlen = 32
+            ctxlen = 8
           },
         },
       },
@@ -61,22 +73,5 @@ return {
     pcall(require('telescope').load_extension, 'fzf')
     pcall(require('telescope').load_extension, 'ui-select')
     pcall(require('telescope').load_extension, 'undo')
-
-    -- See `:help telescope.builtin`
-    local builtin = require('telescope.builtin')
-    vim.keymap.set('n', '<leader><leader>', builtin.buffers, { desc = '[ ] Find existing buffers' })
-    vim.keymap.set('n', '<leader>sf', builtin.find_files, { desc = '[S]earch [F]iles' })
-    vim.keymap.set('n', '<leader>sg', builtin.git_files, { desc = '[S]earch [G]it files' })
-    vim.keymap.set('n', '<leader>sh', builtin.help_tags, { desc = '[S]earch [H]elp' })
-    vim.keymap.set('n', '<leader>sw', builtin.grep_string, { desc = '[S]earch current [W]ord' })
-    vim.keymap.set('n', '<leader>sr', builtin.live_grep, { desc = '[S]earch by G[r]ep' })
-    vim.keymap.set('n', '<leader>sd', builtin.diagnostics, { desc = '[S]earch [D]iagnostics' })
-    vim.keymap.set('n', '<leader>sk', builtin.keymaps, { desc = '[S]earch [K]eymaps' })
-    vim.keymap.set('n', '<leader>s.', builtin.oldfiles, { desc = '[S]earch Recent Files ("." for repeat)' })
-    vim.keymap.set('n', '<leader>/', builtin.current_buffer_fuzzy_find, { desc = '[/] Fuzzily search in current buffer' })
-
-    -- extension mappings
-    local telescope = require('telescope')
-    vim.keymap.set('n', '<leader>su', telescope.extensions.undo.undo, { desc = '[S]earch [U]ndo-tree' })
   end,
 }
