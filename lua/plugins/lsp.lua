@@ -3,8 +3,8 @@ return {
     'neovim/nvim-lspconfig',
     dependencies = {
       -- LSP installer
-      { 'williamboman/mason.nvim' },         -- Optional
-      { 'williamboman/mason-lspconfig.nvim' }, -- Optional
+      { 'williamboman/mason.nvim' },
+      { 'williamboman/mason-lspconfig.nvim' },
     },
     config = function()
       -- Diagnostic keymaps
