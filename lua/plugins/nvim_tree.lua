@@ -2,19 +2,18 @@ return {
   -- nvim-tree
   'nvim-tree/nvim-tree.lua',
   version = "*",
-  lazy = false,
-  config = function()
-    require("nvim-tree").setup({
-      view = {
-        width = 40
-      },
-      update_focused_file = {
-        enable = true
-      },
-    })
-
-    vim.keymap.set('n', '<leader>tt', require('nvim-tree.api').tree.toggle, { desc = '[T]ree [T]oggle' })
-    vim.keymap.set('n', '<leader>to', require('nvim-tree.api').tree.focus, { desc = '[T]ree [O]pen' })
-    vim.keymap.set('n', '<leader>tc', require('nvim-tree.api').tree.close, { desc = '[T]ree [C]lose' })
-  end,
+  cmd = { "NvimTreeToggle", "NvimTreeFocus", "NvimTreeClose" },
+  keys = {
+    { "<leader>tt", "<cmd>NvimTreeToggle<CR>", desc = '[T]ree [T]oggle' },
+    { "<leader>to", "<cmd>NvimTreeFocus<CR>", desc = '[T]ree [O]pen' },
+    { "<leader>tc", "<cmd>NvimTreeClose<CR>", desc = '[T]ree [C]lose' },
+  },
+  opts = {
+    view = {
+      width = 40
+    },
+    update_focused_file = {
+      enable = true
+    },
+  },
 }
