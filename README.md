@@ -182,9 +182,6 @@ Default textobject is activated for identifiers from digits (0, ..., 9), punctua
 | n    | `<Space>ff` | mini.files - file dir          |
 | n    | `<Space>fd` | mini.files - file dir expanded |
 | n    | `<Space>fp` | mini.files - project dir       |
-| n    | `<Space>-`  | oil.nvim file mgr              |
-| n    | `-`         | oil.nvim file mgr floating     |
-| n    | `q`         | oil.nvim file mgr close        |
 | n    | `<Space>lg` | open lazygit floating          |
 
 
