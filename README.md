@@ -195,4 +195,3 @@ Default textobject is activated for identifiers from digits (0, ..., 9), punctua
 | Mode | Keys | Description               |
 | ---- | ---- | ------------------------- |
 | n    | `mt` | (M)arkdown preview toggle |
-| n    | `ms` | (M)arkdown split toggle   |
