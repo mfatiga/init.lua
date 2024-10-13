@@ -82,6 +82,7 @@ return {
 
   -- nvim dev
   -- TODO: check integration with blink_cmp
+  -- issue: https://github.com/folke/lazydev.nvim/issues/71
   {
     "folke/lazydev.nvim",
     ft = "lua", -- only load on lua files
