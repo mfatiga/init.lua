@@ -21,7 +21,11 @@ Features:
 
 
 ## TODO
- - replace alpha.nvim with mini.starter
+ - replace alpha.nvim with [echasnovski/mini.starter](https://github.com/echasnovski/mini.starter)
+ - integrate [echasnovski/mini.surround](https://github.com/echasnovski/mini.surround)
+ - integrate [folke/trouble.nvim](https://github.com/folke/trouble.nvim)
+ - integrate [DanWlker/toolbox.nvim](https://github.com/DanWlker/toolbox.nvim)
+ - integrate [Vigemus/iron.nvim](https://github.com/Vigemus/iron.nvim) or [michaelb/sniprun](https://github.com/michaelb/sniprun)
 
 
 ## Customization
