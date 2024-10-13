@@ -5,8 +5,9 @@ return {
   build = ':TSUpdate',
 
   -- TODO: check treesitter lazy-load
+  -- lazy = vim.fn.argc(-1) == 0, -- load treesitter early when opening a file from the cmdline
   -- event = { "BufReadPost", "BufNewFile" },
-  -- cmd = { "TSInstall", "TSBufEnable", "TSBufDisable", "TSModuleInfo" },
+  -- cmd = { "TSUpdateSync", "TSUpdate", "TSInstall", "TSBufEnable", "TSBufDisable", "TSModuleInfo" },
 
   dependencies = {
     -- Additional text objects via treesitter
