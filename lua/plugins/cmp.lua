@@ -34,7 +34,11 @@ return {
     windows = {
       autocomplete = {
         border = 'none',
-        draw = 'reversed'
+        draw = 'reversed',
+        -- 'preselect' will automatically select the first item in the completion list
+        -- 'manual' will not select any item by default
+        -- 'auto_insert' will not select any item by default, and insert the completion items automatically when selecting them
+        selection = 'auto_insert',
       },
       documentation = {
         border = 'none',
