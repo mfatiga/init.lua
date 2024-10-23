@@ -27,6 +27,7 @@ Features:
  - integrate [folke/trouble.nvim](https://github.com/folke/trouble.nvim)
  - integrate [DanWlker/toolbox.nvim](https://github.com/DanWlker/toolbox.nvim)
  - integrate [Vigemus/iron.nvim](https://github.com/Vigemus/iron.nvim) or [michaelb/sniprun](https://github.com/michaelb/sniprun)
+ - look at [pwnwriter/pwnvim](https://github.com/pwnwriter/pwnvim) for config hints
 
 
 ## Customization
