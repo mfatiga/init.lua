@@ -5,6 +5,8 @@ return {
       -- LSP installer
       { 'williamboman/mason.nvim' },
       { 'williamboman/mason-lspconfig.nvim' },
+      -- Require autocomplete to extend capabilities
+      { 'saghen/blink.cmp' },
     },
     config = function()
       -- Diagnostic keymaps
@@ -51,6 +53,7 @@ return {
 
       -- Autocomplete setup
       local capabilities = vim.lsp.protocol.make_client_capabilities()
+      capabilities = require('blink.cmp').get_lsp_capabilities(capabilities)
 
       -- Servers
       local servers = LeetVim.language_servers
@@ -81,8 +84,6 @@ return {
   },
 
   -- nvim dev
-  -- TODO: check integration with blink_cmp
-  -- issue: https://github.com/folke/lazydev.nvim/issues/71
   {
     "folke/lazydev.nvim",
     ft = "lua", -- only load on lua files
@@ -95,4 +96,72 @@ return {
     },
   },
   { "Bilal2453/luvit-meta", lazy = true },
+
+  -- autocompletion
+  {
+    'saghen/blink.cmp',
+    lazy = false, -- lazy loading handled internally
+    -- optional: provides snippets for the snippet source
+    dependencies = 'rafamadriz/friendly-snippets',
+    version = 'v0.*',
+    opts = {
+      keymap = {
+        ['<C-space>'] = { 'show', 'show_documentation', 'hide_documentation' },
+        ['<C-e>'] = { 'hide' },
+        ['<CR>'] = { 'accept', 'fallback' },
+
+        ['<Tab>'] = { 'select_next', 'snippet_forward', 'fallback' },
+        ['<S-Tab>'] = { 'select_prev', 'snippet_backward', 'fallback' },
+
+        ['<Up>'] = { 'select_prev', 'fallback' },
+        ['<Down>'] = { 'select_next', 'fallback' },
+        ['<C-f>'] = { 'scroll_documentation_up', 'fallback' },
+        ['<C-d>'] = { 'scroll_documentation_down', 'fallback' },
+      },
+      sources = {
+        -- add lazydev to your completion providers
+        completion = {
+          enabled_providers = { 'lsp', 'path', 'snippets', 'buffer', 'lazydev' },
+        },
+        providers = {
+          -- dont show LuaLS require statements when lazydev has items
+          lsp = { fallback_for = { 'lazydev' } },
+          lazydev = { name = 'LazyDev', module = 'lazydev.integrations.blink' },
+        },
+      },
+      accept = {
+        -- auto-brackets support
+        auto_brackets = { enabled = true },
+      },
+      trigger = {
+        -- experimental signature help support
+        signature_help = { enabled = true },
+        completion = {
+          show_on_insert_on_trigger_character = false,
+        },
+      },
+      windows = {
+        autocomplete = {
+          border = 'none',
+          draw = 'reversed',
+          -- 'preselect' will automatically select the first item in the completion list
+          -- 'manual' will not select any item by default
+          -- 'auto_insert' will not select any item by default, and insert the completion items automatically when selecting them
+          selection = 'preselect',
+        },
+        documentation = {
+          border = 'none',
+        },
+      },
+      highlight = {
+        -- sets the fallback highlight groups to nvim-cmp's highlight groups
+        -- useful for when your theme doesn't support blink.cmp
+        -- will be removed in a future release, assuming themes add support
+        use_nvim_cmp_as_default = true,
+      },
+
+      -- set to 'mono' for 'Nerd Font Mono' or 'normal' for 'Nerd Font'
+      nerd_font_variant = 'normal',
+    }
+  },
 }
