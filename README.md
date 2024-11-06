@@ -123,7 +123,8 @@ Default textobject is activated for identifiers from digits (0, ..., 9), punctua
 | n    | `<Space>s.`      | Search recently opened files     |
 | n    | `<Space>sw`      | Search current Word              |
 | n    | `<Space>sd`      | Search Diagnostics               |
-| n    | `<Space>st`      | Search TODOs                     |
+| n    | `<Space>st`      | Search TODO                      |
+| n    | `<Space>sT`      | Search TODO/FIX/FIXME            |
 | n    | `<Space>sn`      | Search Noice/Notifications       |    
 | n    | `<Space>sh`      | Search Help                      |
 | n    | `<Space>sk`      | Search Keymaps                   |
@@ -177,6 +178,24 @@ Default textobject is activated for identifiers from digits (0, ..., 9), punctua
 | n    | `<Space>e` | Open diagnostics loclist |
 | n    | `[d`       | Diagnostic goto prev     |
 | n    | `]d`       | Diagnostic goto next     |
+
+
+### Trouble
+
+| Mode | Keys        | Description                              |
+| ---- | ----------- | ---------------------------------------- |
+| n    | `<Space>cs` | Symbols (Trouble)                        |
+| n    | `<Space>cS` | LSP references/definitions/... (Trouble) |
+| n    | `<Space>xx` | Diagnostics (Trouble)                    |
+| n    | `<Space>xX` | Buffer Diagnostics (Trouble)             |
+| n    | `<Space>xL` | Location List (Trouble)                  |
+| n    | `<Space>xQ` | Quickfix List (Trouble)                  |
+| n    | `<Space>xt` | TODO (Trouble)                           |
+| n    | `<Space>xT` | TODO/FIX/FIXME (Trouble)                 |
+| n    | `[q`        | Previous Trouble/Quickfix Item           |
+| n    | `]q`        | Next Trouble/Quickfix Item               |
+| n    | `[t`        | Previous TODO comment                    |
+| n    | `]t`        | Next TODO comment                        |
 
 
 ### File management
