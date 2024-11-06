@@ -107,7 +107,7 @@ return {
     opts = {
       keymap = {
         ['<C-space>'] = { 'show', 'show_documentation', 'hide_documentation' },
-        ['<C-e>'] = { 'hide' },
+        ['<C-e>'] = { 'hide', 'fallback' },
         ['<CR>'] = { 'accept', 'fallback' },
 
         ['<Tab>'] = { 'select_next', 'snippet_forward', 'fallback' },

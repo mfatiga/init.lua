@@ -1,5 +1,5 @@
 return {
-  theme = require("themes.gruvbox_material"),
+  theme = require("themes.kanagawa"),
   language_servers = {
     pyright = {},
     elixirls = {},
