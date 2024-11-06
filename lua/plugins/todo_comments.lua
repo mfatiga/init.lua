@@ -5,6 +5,6 @@ return {
   dependencies = { "nvim-lua/plenary.nvim" },
   opts = {},
   keys = {
-    { "<leader>st", "<cmd>TodoTelescope<CR>", desc = "[S]earch [T]ODOs" }
+    { "<leader>st", "<cmd>TodoTelescope<CR>", desc = "Search TODOs" }
   }
 }

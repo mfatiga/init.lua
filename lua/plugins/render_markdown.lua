@@ -9,7 +9,7 @@ return {
     {
       "<leader>mt",
       "<cmd>RenderMarkdown toggle<CR>",
-      desc = "[M]arkdown preview toggle",
+      desc = "Markdown preview toggle",
     },
   },
   opts = {

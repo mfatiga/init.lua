@@ -24,26 +24,26 @@ return {
           vim.keymap.set(mode, keys, func, { buffer = bufnr, desc = desc })
         end
 
-        kmap('n', '<leader>rn', vim.lsp.buf.rename, '[R]e[n]ame')
-        kmap('n', '<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction')
+        kmap('n', '<leader>rn', vim.lsp.buf.rename, 'Rename')
+        kmap('n', '<leader>ca', vim.lsp.buf.code_action, 'Code Action')
 
-        kmap('n', 'gd', vim.lsp.buf.definition, '[G]oto [D]efinition')
-        kmap('n', 'gr', require('telescope.builtin').lsp_references, '[G]oto [R]eferences')
-        kmap('n', 'gI', vim.lsp.buf.implementation, '[G]oto [I]mplementation')
-        kmap('n', '<leader>D', vim.lsp.buf.type_definition, 'Type [D]efinition')
-        kmap('n', '<leader>ds', require('telescope.builtin').lsp_document_symbols, '[D]ocument [S]ymbols')
-        kmap('n', '<leader>ws', require('telescope.builtin').lsp_dynamic_workspace_symbols, '[W]orkspace [S]ymbols')
+        kmap('n', 'gd', vim.lsp.buf.definition, 'Goto Definition')
+        kmap('n', 'gr', require('telescope.builtin').lsp_references, 'Goto References')
+        kmap('n', 'gI', vim.lsp.buf.implementation, 'Goto Implementation')
+        kmap('n', '<leader>D', vim.lsp.buf.type_definition, 'Type Definition')
+        kmap('n', '<leader>ds', require('telescope.builtin').lsp_document_symbols, 'Document Symbols')
+        kmap('n', '<leader>ws', require('telescope.builtin').lsp_dynamic_workspace_symbols, 'Workspace Symbols')
 
         kmap('n', 'K', vim.lsp.buf.hover, 'Hover')
         kmap('n', 'gK', vim.lsp.buf.signature_help, 'Signature Documentation')
         kmap('i', '<C-k>', vim.lsp.buf.signature_help, 'Signature Documentation')
 
-        kmap('n', 'gD', vim.lsp.buf.declaration, '[G]oto [D]eclaration')
-        kmap('n', '<leader>wa', vim.lsp.buf.add_workspace_folder, '[W]orkspace [A]dd Folder')
-        kmap('n', '<leader>wr', vim.lsp.buf.remove_workspace_folder, '[W]orkspace [R]emove Folder')
+        kmap('n', 'gD', vim.lsp.buf.declaration, 'Goto Declaration')
+        kmap('n', '<leader>wa', vim.lsp.buf.add_workspace_folder, 'Workspace Add Folder')
+        kmap('n', '<leader>wr', vim.lsp.buf.remove_workspace_folder, 'Workspace Remove Folder')
         kmap('n', '<leader>wl', function()
           print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
-        end, '[W]orkspace [L]ist Folders')
+        end, 'Workspace List Folders')
 
         -- Create a command `:FormatLSP` local to the LSP buffer
         vim.api.nvim_buf_create_user_command(bufnr, 'FormatLSP', function(_)

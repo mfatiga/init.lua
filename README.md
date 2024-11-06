@@ -114,21 +114,21 @@ Default textobject is activated for identifiers from digits (0, ..., 9), punctua
 
 ### Telescope
 
-| Mode | Keys             | Description                           |
-| ---- | ---------------- | ------------------------------------- |
-| n    | `<Space><Space>` | ( ) Search buffers                    |
-| n    | `<Space>sf`      | (S)earch (F)iles                      |
-| n    | `<Space>sg`      | (S)earch (G)it files                  |
-| n    | `<Space>sr`      | (S)earch by G(r)ep                    |
-| n    | `<Space>s.`      | (.) Search recently opened files      |
-| n    | `<Space>sw`      | (S)earch current (W)ord               |
-| n    | `<Space>sd`      | (S)earch (D)iagnostics                |
-| n    | `<Space>st`      | (S)earch (T)ODOs                      |
-| n    | `<Space>sn`      | (S)earch (N)oice/(N)otifications      |
-| n    | `<Space>sh`      | (S)earch (H)elp                       |
-| n    | `<Space>sk`      | (S)earch (K)eymaps                    |
-| n    | `<Space>su`      | (S)earch (U)ndo-tree                  |
-| n    | `<Space>/`       | (/) Fuzzily search in current buffer  |
+| Mode | Keys             | Description                      |
+| ---- | ---------------- | -------------------------------- |
+| n    | `<Space><Space>` | Search buffers                   |
+| n    | `<Space>sf`      | Search Files                     |
+| n    | `<Space>sg`      | Search Git files                 |
+| n    | `<Space>sr`      | Search by Grep                   |
+| n    | `<Space>s.`      | Search recently opened files     |
+| n    | `<Space>sw`      | Search current Word              |
+| n    | `<Space>sd`      | Search Diagnostics               |
+| n    | `<Space>st`      | Search TODOs                     |
+| n    | `<Space>sn`      | Search Noice/Notifications       |    
+| n    | `<Space>sh`      | Search Help                      |
+| n    | `<Space>sk`      | Search Keymaps                   |
+| n    | `<Space>su`      | Search Undo-tree                 |
+| n    | `<Space>/`       | Fuzzily search in current buffer |
 
 
 ### LSP
@@ -137,23 +137,23 @@ Default textobject is activated for identifiers from digits (0, ..., 9), punctua
 | ------------ | ------------------------------ |
 | `:FormatLSP` | Format current buffer with LSP |
 
-| Mode | Keys        | Description                 |
-| ---- | ----------- | --------------------------- |
-| n    | `<Space>rn` | (R)e(n)ame                  |
-| n    | `<Space>ca` | (C)ode (A)ction             |
-| n    | `gd`        | (G)oto (D)efinition         |
-| n    | `gr`        | (G)oto (R)eferences         |
-| n    | `gI`        | (G)oto (I)mplementation     |
-| n    | `<Space>D`  | Type (D)efinition           |
-| n    | `<Space>ds` | (D)ocument (S)ymbols        |
-| n    | `<Space>ws` | (W)orkspace (S)ymbols       |
-| n    | `K`         | Hover                       |
-| n    | `gK`        | Signature Documentation     |
-| i    | `<Ctrl-k>`  | Signature Documentation     |
-| n    | `gD`        | (G)oto (D)eclaration        |
-| n    | `<Space>wa` | (W)orkspace (A)dd Folder    |
-| n    | `<Space>wr` | (W)orkspace (R)emove Folder |
-| n    | `<Space>wl` | (W)orkspace (L)ist Folders  |
+| Mode | Keys        | Description             |
+| ---- | ----------- | ----------------------- |
+| n    | `<Space>rn` | Rename                  |
+| n    | `<Space>ca` | Code Action             |
+| n    | `gd`        | Goto Definition         |
+| n    | `gr`        | Goto References         |
+| n    | `gI`        | Goto Implementation     |
+| n    | `<Space>D`  | Type Definition         |
+| n    | `<Space>ds` | Document Symbols        |
+| n    | `<Space>ws` | Workspace Symbols       |
+| n    | `K`         | Hover                   |
+| n    | `gK`        | Signature Documentation |
+| i    | `<Ctrl-k>`  | Signature Documentation |
+| n    | `gD`        | Goto Declaration        |
+| n    | `<Space>wa` | Workspace Add Folder    |
+| n    | `<Space>wr` | Workspace Remove Folder |
+| n    | `<Space>wl` | Workspace List Folders  |
 
 
 ### Autocomplete
@@ -192,6 +192,6 @@ Default textobject is activated for identifiers from digits (0, ..., 9), punctua
 
 ### Markdown
 
-| Mode | Keys | Description               |
-| ---- | ---- | ------------------------- |
-| n    | `mt` | (M)arkdown preview toggle |
+| Mode | Keys | Description             |
+| ---- | ---- | ----------------------- |
+| n    | `mt` | Markdown preview toggle |
