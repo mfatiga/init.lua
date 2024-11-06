@@ -32,6 +32,9 @@ return {
   config = function()
     local actions = require("telescope.actions")
     local themes = require("telescope.themes")
+
+    local open_with_trouble = require("trouble.sources.telescope").open
+
     require('telescope').setup {
       defaults = themes.get_ivy {
         layout_config = {
@@ -43,6 +46,10 @@ return {
           i = {
             ['<C-u>'] = false,
             ['<C-d>'] = false,
+            ['<C-t>'] = open_with_trouble,
+          },
+          n = {
+            ['<C-t>'] = open_with_trouble,
           },
         },
       },
