@@ -26,6 +26,9 @@ require("lazy").setup({
   -- automatically check for plugin updates
   checker = {
     enabled = true,
-    notify = false
+    notify = false,
+  },
+  change_detection = {
+    notify = false,
   },
 })
