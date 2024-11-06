@@ -24,7 +24,6 @@ Features:
  - replace alpha.nvim with [echasnovski/mini.starter](https://github.com/echasnovski/mini.starter)
  - integrate [echasnovski/mini.surround](https://github.com/echasnovski/mini.surround)
  - integrate [echasnovski/mini.sessions](https://github.com/echasnovski/mini.sessions)
- - integrate [folke/trouble.nvim](https://github.com/folke/trouble.nvim)
  - integrate [DanWlker/toolbox.nvim](https://github.com/DanWlker/toolbox.nvim)
  - integrate [Vigemus/iron.nvim](https://github.com/Vigemus/iron.nvim) or [michaelb/sniprun](https://github.com/michaelb/sniprun)
  - integrate [rmagatti/auto-session](https://github.com/rmagatti/auto-session)
@@ -182,20 +181,21 @@ Default textobject is activated for identifiers from digits (0, ..., 9), punctua
 
 ### Trouble
 
-| Mode | Keys        | Description                              |
-| ---- | ----------- | ---------------------------------------- |
-| n    | `<Space>cs` | Symbols (Trouble)                        |
-| n    | `<Space>cS` | LSP references/definitions/... (Trouble) |
-| n    | `<Space>xx` | Diagnostics (Trouble)                    |
-| n    | `<Space>xX` | Buffer Diagnostics (Trouble)             |
-| n    | `<Space>xL` | Location List (Trouble)                  |
-| n    | `<Space>xQ` | Quickfix List (Trouble)                  |
-| n    | `<Space>xt` | TODO (Trouble)                           |
-| n    | `<Space>xT` | TODO/FIX/FIXME (Trouble)                 |
-| n    | `[q`        | Previous Trouble/Quickfix Item           |
-| n    | `]q`        | Next Trouble/Quickfix Item               |
-| n    | `[t`        | Previous TODO comment                    |
-| n    | `]t`        | Next TODO comment                        |
+| Mode | Keys        | Description                    |
+| ---- | ----------- | ------------------------------ |
+| n    | `<Space>cs` | Symbols                        |
+| n    | `<Space>cS` | LSP references/definitions/... |
+| n    | `<Space>td` | Diagnostics                    |
+| n    | `<Space>tD` | Buffer Diagnostics             |
+| n    | `<Space>tl` | Location List                  |
+| n    | `<Space>tq` | Quickfix List                  |
+| n    | `<Space>ts` | Telescope Results              |
+| n    | `<Space>tt` | TODO                           |
+| n    | `<Space>tT` | TODO/FIX/FIXME                 |
+| n    | `[q`        | Previous Trouble/Quickfix Item |
+| n    | `]q`        | Next Trouble/Quickfix Item     |
+| n    | `[t`        | Previous TODO comment          |
+| n    | `]t`        | Next TODO comment              |
 
 
 ### File management
