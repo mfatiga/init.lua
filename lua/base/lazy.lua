@@ -17,13 +17,9 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   spec = {
-    -- import your plugins
     { import = "plugins" },
   },
-  -- colorscheme that will be used when installing plugins.
   install = { colorscheme = { LeetVim.theme.extras.lazy_install } },
-
-  -- automatically check for plugin updates
   checker = {
     enabled = true,
     notify = false,
