@@ -1,7 +1,7 @@
 return {
-  -- highlight and search for todo/fix/bug/perfnote/warning comments
   "folke/todo-comments.nvim",
   event = { "BufReadPre", "BufNewFile" },
+  cmd = { "TodoTelescope", "TodoTrouble" },
   dependencies = { "nvim-lua/plenary.nvim" },
   opts = {},
   keys = {
