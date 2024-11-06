@@ -183,12 +183,10 @@ Default textobject is activated for identifiers from digits (0, ..., 9), punctua
 
 | Mode | Keys        | Description                    |
 | ---- | ----------- | ------------------------------ |
-| n    | `<Space>tt` | (T)ree (t)oggle                |
-| n    | `<Space>to` | (T)ree (o)pen and focus        |
-| n    | `<Space>tc` | (T)ree (c)lose                 |
 | n    | `<Space>ff` | mini.files - file dir          |
 | n    | `<Space>fd` | mini.files - file dir expanded |
 | n    | `<Space>fp` | mini.files - project dir       |
+| n    | `<Space>ft` | treeview toggle                |
 | n    | `<Space>lg` | open lazygit floating          |
 
 

@@ -12,11 +12,9 @@ return {
   'nvim-tree/nvim-tree.lua',
   version = "*",
   lazy = not is_dir_opened(),
-  cmd = { "NvimTreeToggle", "NvimTreeFocus", "NvimTreeClose" },
+  cmd = { "NvimTreeToggle" },
   keys = {
-    { "<leader>tt", "<cmd>NvimTreeToggle<CR>", desc = '[T]ree [T]oggle' },
-    { "<leader>to", "<cmd>NvimTreeFocus<CR>", desc = '[T]ree [O]pen' },
-    { "<leader>tc", "<cmd>NvimTreeClose<CR>", desc = '[T]ree [C]lose' },
+    { "<leader>ft", "<cmd>NvimTreeToggle<CR>", desc = 'Tree toggle' },
   },
   opts = {
     view = {
