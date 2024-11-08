@@ -23,10 +23,8 @@ Features:
 ## TODO
  - replace alpha.nvim with [echasnovski/mini.starter](https://github.com/echasnovski/mini.starter)
  - integrate [echasnovski/mini.surround](https://github.com/echasnovski/mini.surround)
- - integrate [echasnovski/mini.sessions](https://github.com/echasnovski/mini.sessions)
  - integrate [DanWlker/toolbox.nvim](https://github.com/DanWlker/toolbox.nvim)
  - integrate [Vigemus/iron.nvim](https://github.com/Vigemus/iron.nvim) or [michaelb/sniprun](https://github.com/michaelb/sniprun)
- - integrate [rmagatti/auto-session](https://github.com/rmagatti/auto-session)
  - look at [pwnwriter/pwnvim](https://github.com/pwnwriter/pwnvim) for config hints
 
 
@@ -152,7 +150,7 @@ Default textobject is activated for identifiers from digits (0, ..., 9), punctua
 | i    | `<Ctrl-k>`  | Signature Documentation |
 | n    | `gD`        | Goto Declaration        |
 | n    | `<Space>wa` | Workspace Add Folder    |
-| n    | `<Space>wr` | Workspace Remove Folder |
+| n    | `<Space>wd` | Workspace Remove Folder |
 | n    | `<Space>wl` | Workspace List Folders  |
 
 
@@ -207,6 +205,14 @@ Default textobject is activated for identifiers from digits (0, ..., 9), punctua
 | n    | `<Space>fp` | mini.files - project dir       |
 | n    | `<Space>ft` | treeview toggle                |
 | n    | `<Space>lg` | open lazygit floating          |
+
+
+### Session management
+| Mode | Keys        | Description                    |
+| ---- | ----------- | ------------------------------ |
+| n    | `<Space>wf` | Find session                   |
+| n    | `<Space>ww` | Create/Write session           |
+| n    | `<Space>wr` | Restore session                |
 
 
 ### Markdown

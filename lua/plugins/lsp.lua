@@ -40,10 +40,8 @@ return {
 
         kmap('n', 'gD', vim.lsp.buf.declaration, 'Goto Declaration')
         kmap('n', '<leader>wa', vim.lsp.buf.add_workspace_folder, 'Workspace Add Folder')
-        kmap('n', '<leader>wr', vim.lsp.buf.remove_workspace_folder, 'Workspace Remove Folder')
-        kmap('n', '<leader>wl', function()
-          print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
-        end, 'Workspace List Folders')
+        kmap('n', '<leader>wd', vim.lsp.buf.remove_workspace_folder, 'Workspace Remove Folder')
+        kmap('n', '<leader>wl', function() print(vim.inspect(vim.lsp.buf.list_workspace_folders())) end, 'Workspace List Folders')
 
         -- Create a command `:FormatLSP` local to the LSP buffer
         vim.api.nvim_buf_create_user_command(bufnr, 'FormatLSP', function(_)
