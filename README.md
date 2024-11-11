@@ -207,6 +207,21 @@ Default textobject is activated for identifiers from digits (0, ..., 9), punctua
 | n    | `<Space>lg` | open lazygit floating          |
 
 
+### GIT Integration
+| Mode | Keys        | Description       |
+| ---- | ----------- | ----------------- |
+| n    | `]h`        | Next Hunk         |
+| n    | `[h`        | Prev Hunk         |
+| n/v  | `<leader>hs`| Stage Hunk        |
+| n/v  | `<leader>hr`| Reset Hunk        |
+| n    | `<leader>hS`| Stage Buffer      |
+| n    | `<leader>hR`| Reset Buffer      |
+| n    | `<leader>hb`| Blame Line        |
+| n    | `<leader>hB`| Toggle Line Blame |
+| n    | `<leader>hd`| Diff This         |
+| n    | `<leader>hD`| Diff This ~       |
+
+
 ### Session management
 | Mode | Keys        | Description                    |
 | ---- | ----------- | ------------------------------ |
