@@ -64,7 +64,6 @@ return {
     dashboard.section.header.val = header
     dashboard.section.header.opts.hl = colorize(header, color_map, colors)
     dashboard.section.buttons.val = {
-      dashboard.button("o", " " .. " Open CWD", "<cmd>edit .<CR>"),
       dashboard.button("f", " " .. " Find file", "<cmd>Telescope find_files <CR>"),
       dashboard.button("n", " " .. " New file", "<cmd>ene <BAR> startinsert <CR>"),
       dashboard.button("p", " " .. " Plugins", "<cmd>Lazy<CR>"),
