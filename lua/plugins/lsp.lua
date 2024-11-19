@@ -148,6 +148,7 @@ return {
           selection = 'preselect',
         },
         documentation = {
+          auto_show = true,
           border = 'none',
         },
       },
