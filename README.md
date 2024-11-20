@@ -25,7 +25,9 @@ Features:
  - integrate [echasnovski/mini.surround](https://github.com/echasnovski/mini.surround)
  - integrate [DanWlker/toolbox.nvim](https://github.com/DanWlker/toolbox.nvim)
  - integrate [Vigemus/iron.nvim](https://github.com/Vigemus/iron.nvim) or [michaelb/sniprun](https://github.com/michaelb/sniprun)
- - look at [pwnwriter/pwnvim](https://github.com/pwnwriter/pwnvim) for config hints
+ - config hints:
+   - [lazyvim.org](https://www.lazyvim.org/)
+   - [pwnwriter/pwnvim](https://github.com/pwnwriter/pwnvim)
 
 
 ## Customization
