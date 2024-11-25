@@ -141,7 +141,9 @@ return {
       windows = {
         autocomplete = {
           border = 'none',
-          draw = 'reversed',
+          draw = {
+            columns = { { 'label', 'label_description', gap = 1 }, { 'kind_icon', 'kind', gap = 1 } },
+          },
           -- 'preselect' will automatically select the first item in the completion list
           -- 'manual' will not select any item by default
           -- 'auto_insert' will not select any item by default, and insert the completion items automatically when selecting them
@@ -158,9 +160,6 @@ return {
         -- will be removed in a future release, assuming themes add support
         use_nvim_cmp_as_default = true,
       },
-
-      -- set to 'mono' for 'Nerd Font Mono' or 'normal' for 'Nerd Font'
-      nerd_font_variant = 'normal',
     }
   },
 }
