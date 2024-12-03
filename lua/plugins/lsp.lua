@@ -117,7 +117,6 @@ return {
         ['<C-d>'] = { 'scroll_documentation_down', 'fallback' },
       },
       sources = {
-        -- add lazydev to your completion providers
         completion = {
           enabled_providers = { 'lsp', 'path', 'snippets', 'buffer', 'lazydev' },
         },
@@ -127,39 +126,59 @@ return {
           lazydev = { name = 'LazyDev', module = 'lazydev.integrations.blink' },
         },
       },
-      accept = {
-        -- auto-brackets support
-        auto_brackets = { enabled = true },
-      },
-      trigger = {
-        -- experimental signature help support
-        signature_help = { enabled = true },
-        completion = {
+      completion = {
+        trigger = {
           show_on_insert_on_trigger_character = false,
         },
-      },
-      windows = {
-        autocomplete = {
+        accept = {
+          auto_brackets = {
+            enabled = true,
+          },
+        },
+        menu = {
           border = 'none',
           draw = {
-            columns = { { 'label', 'label_description', gap = 1 }, { 'kind_icon', 'kind', gap = 1 } },
+            -- Aligns the keyword you've typed to a component in the menu
+            align_to_component = 'label', -- or 'none' to disable
+            -- Left and right padding, optionally { left, right } for different padding on each side
+            padding = 1,
+            -- Gap between columns
+            gap = 1,
+            -- Components to render, grouped by column
+            columns = { { "label", "label_description", gap = 1 }, { "kind_icon", "kind", gap = 1 } },
           },
-          -- 'preselect' will automatically select the first item in the completion list
-          -- 'manual' will not select any item by default
-          -- 'auto_insert' will not select any item by default, and insert the completion items automatically when selecting them
-          selection = 'preselect',
         },
+
         documentation = {
           auto_show = true,
-          border = 'none',
+          -- Disable if you run into performance issues
+          treesitter_highlighting = true,
+          window = {
+            border = 'none',
+          },
         },
       },
-      highlight = {
-        -- sets the fallback highlight groups to nvim-cmp's highlight groups
-        -- useful for when your theme doesn't support blink.cmp
-        -- will be removed in a future release, assuming themes add support
+
+      -- Experimental signature help support
+      signature = {
+        enabled = true,
+        trigger = {
+          -- When true, will show the signature help window when the cursor comes after a trigger character when entering insert mode
+          show_on_insert_on_trigger_character = false,
+        },
+        window = {
+          border = 'padded',
+          -- Disable if you run into performance issues
+          treesitter_highlighting = true,
+        },
+      },
+
+      appearance = {
+        -- Sets the fallback highlight groups to nvim-cmp's highlight groups
+        -- Useful for when your theme doesn't support blink.cmp
+        -- Will be removed in a future release
         use_nvim_cmp_as_default = true,
       },
-    }
+    },
   },
 }
