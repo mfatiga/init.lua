@@ -98,6 +98,8 @@ Default textobject is activated for identifiers from digits (0, ..., 9), punctua
 | n    | `<Space><CR>`| Alternate buffer (:e #)                         |
 | n    | `<Space>zz`  | Zen-Mode                                        |
 | n    | `<Space>?`   | Buffer Keymaps                                  |
+| n    | `<Space>xx`  | LUA execute line                                |
+| v    | `<Space>x`   | LUA execute selected                            |
 
 
 ### Movement

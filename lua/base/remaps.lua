@@ -43,3 +43,7 @@ vim.keymap.set("n", "<leader>bd", "<cmd>bd<CR>", { desc = 'Delete buffer' })
 vim.keymap.set("n", "<leader>bD", "<cmd>bd!<CR>", { desc = 'Force delete buffer' })
 -- Switch alt buffer
 vim.keymap.set("n", "<leader><CR>", "<cmd>e #<CR>", { desc = 'Alternate buffer' })
+
+-- Neovim LUA
+vim.keymap.set("n", "<leader>xx", "<cmd>.lua<CR>", { desc = 'LUA execute line' })
+vim.keymap.set("v", "<leader>xx", ":lua<CR>", { desc = 'LUA execute selected' })
