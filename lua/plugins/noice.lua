@@ -53,7 +53,7 @@ return {
       opts = {
         render = "compact",
         stages = "fade",
-        timeout = 3000,
+        timeout = 2000,
       }
     }
   }
