@@ -216,14 +216,14 @@ Default textobject is activated for identifiers from digits (0, ..., 9), punctua
 | ---- | ----------- | ----------------- |
 | n    | `]h`        | Next Hunk         |
 | n    | `[h`        | Prev Hunk         |
-| n/v  | `<leader>hs`| Stage Hunk        |
-| n/v  | `<leader>hr`| Reset Hunk        |
-| n    | `<leader>hS`| Stage Buffer      |
-| n    | `<leader>hR`| Reset Buffer      |
-| n    | `<leader>hb`| Blame Line        |
-| n    | `<leader>hB`| Toggle Line Blame |
-| n    | `<leader>hd`| Diff This         |
-| n    | `<leader>hD`| Diff This ~       |
+| n/v  | `<Space>hs`| Stage Hunk        |
+| n/v  | `<Space>hr`| Reset Hunk        |
+| n    | `<Space>hS`| Stage Buffer      |
+| n    | `<Space>hR`| Reset Buffer      |
+| n    | `<Space>hb`| Blame Line        |
+| n    | `<Space>hB`| Toggle Line Blame |
+| n    | `<Space>hd`| Diff This         |
+| n    | `<Space>hD`| Diff This ~       |
 
 
 ### Session management
