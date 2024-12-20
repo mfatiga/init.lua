@@ -208,22 +208,28 @@ Default textobject is activated for identifiers from digits (0, ..., 9), punctua
 | n    | `<Space>fd` | mini.files - file dir expanded |
 | n    | `<Space>fp` | mini.files - project dir       |
 | n    | `<Space>ft` | treeview toggle                |
-| n    | `<Space>lg` | open lazygit floating          |
 
 
 ### GIT Integration
-| Mode | Keys        | Description       |
-| ---- | ----------- | ----------------- |
-| n    | `]h`        | Next Hunk         |
-| n    | `[h`        | Prev Hunk         |
-| n/v  | `<Space>hs`| Stage Hunk        |
-| n/v  | `<Space>hr`| Reset Hunk        |
-| n    | `<Space>hS`| Stage Buffer      |
-| n    | `<Space>hR`| Reset Buffer      |
-| n    | `<Space>hb`| Blame Line        |
-| n    | `<Space>hB`| Toggle Line Blame |
-| n    | `<Space>hd`| Diff This         |
-| n    | `<Space>hD`| Diff This ~       |
+| Mode | Keys        | Description           |
+| ---- | ----------- | --------------------- |
+| n    | `]h`        | Next Hunk             |
+| n    | `[h`        | Prev Hunk             |
+| n/v  | `<Space>hs` | Stage Hunk            |
+| n/v  | `<Space>hr` | Reset Hunk            |
+| n    | `<Space>hS` | Stage Buffer          |
+| n    | `<Space>hR` | Reset Buffer          |
+| n    | `<Space>hb` | Blame Line            |
+| n    | `<Space>hB` | Toggle Line Blame     |
+| n    | `<Space>hd` | Diff This             |
+| n    | `<Space>hD` | Diff This ~           |
+| n    | `<Space>lg` | open lazygit floating |
+
+
+### Terminal
+| Mode | Keys    | Description              |
+| ---- | ------- | ------------------------ |
+| n/t  | `<M-t>` | Toggle floating terminal |
 
 
 ### Session management
