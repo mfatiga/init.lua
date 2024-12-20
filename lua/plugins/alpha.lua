@@ -73,8 +73,6 @@ return {
       dashboard.button("q", " " .. " Quit", "<cmd>qa<CR>"),
     }
 
-    -- { '<leader>wf', '', desc = 'Search sessions' },
-
     local fortune = require("alpha.fortune")
     dashboard.section.footer.val = fortune()
 
