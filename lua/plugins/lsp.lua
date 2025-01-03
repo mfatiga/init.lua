@@ -117,18 +117,20 @@ return {
         ['<C-d>'] = { 'scroll_documentation_down', 'fallback' },
       },
       sources = {
-        completion = {
-          enabled_providers = { 'lsp', 'path', 'snippets', 'buffer', 'lazydev' },
-        },
+        default = { 'lazydev', 'lsp', 'path', 'snippets', 'buffer' },
         providers = {
-          -- dont show LuaLS require statements when lazydev has items
-          lsp = { fallback_for = { 'lazydev' } },
-          lazydev = { name = 'LazyDev', module = 'lazydev.integrations.blink' },
+          lazydev = {
+            name = 'LazyDev',
+            module = 'lazydev.integrations.blink',
+            -- make lazydev completions top priority (see `:h blink.cmp`)
+            score_offset = 100,
+          },
         },
       },
       completion = {
         trigger = {
           show_on_insert_on_trigger_character = false,
+          -- show_on_accept_on_trigger_character = false --TODO: maybe?
         },
         accept = {
           auto_brackets = {
@@ -136,10 +138,12 @@ return {
           },
         },
         menu = {
+          -- don't auto-show in cmdline mode
+          auto_show = function(ctx) return ctx.mode ~= 'cmdline' end,
           border = 'none',
           draw = {
             -- Aligns the keyword you've typed to a component in the menu
-            align_to_component = 'label', -- or 'none' to disable
+            align_to = 'label', -- or 'none' to disable, or 'cursor' to align to the cursor
             -- Left and right padding, optionally { left, right } for different padding on each side
             padding = 1,
             -- Gap between columns
