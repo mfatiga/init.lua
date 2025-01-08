@@ -104,6 +104,8 @@ return {
     version = 'v0.*',
     opts = {
       keymap = {
+        preset = 'none',
+
         ['<C-space>'] = { 'show', 'show_documentation', 'hide_documentation' },
         ['<C-e>'] = { 'hide', 'fallback' },
         ['<CR>'] = { 'accept', 'fallback' },
@@ -113,6 +115,9 @@ return {
 
         ['<Up>'] = { 'select_prev', 'fallback' },
         ['<Down>'] = { 'select_next', 'fallback' },
+        ['<C-p>'] = { 'select_prev', 'fallback' },
+        ['<C-n>'] = { 'select_next', 'fallback' },
+
         ['<C-f>'] = { 'scroll_documentation_up', 'fallback' },
         ['<C-d>'] = { 'scroll_documentation_down', 'fallback' },
       },
@@ -132,6 +137,16 @@ return {
           show_on_insert_on_trigger_character = false,
           -- show_on_accept_on_trigger_character = false --TODO: maybe?
         },
+        list = {
+          selection = {
+            -- preselect: when not in cmdline or snippet
+            preselect = function (ctx)
+              return ctx.mode ~= 'cmdline' and not require('blink.cmp').snippet_active()
+            end,
+            -- auto-insert: never
+            auto_insert = false,
+          },
+        },
         accept = {
           auto_brackets = {
             enabled = true,
@@ -139,7 +154,7 @@ return {
         },
         menu = {
           -- don't auto-show in cmdline mode
-          auto_show = function(ctx) return ctx.mode ~= 'cmdline' end,
+          -- auto_show = function(ctx) return ctx.mode ~= 'cmdline' end,
           border = 'none',
           draw = {
             -- Aligns the keyword you've typed to a component in the menu
@@ -152,7 +167,6 @@ return {
             columns = { { "label", "label_description", gap = 1 }, { "kind_icon", "kind", gap = 1 } },
           },
         },
-
         documentation = {
           auto_show = true,
           -- Disable if you run into performance issues
