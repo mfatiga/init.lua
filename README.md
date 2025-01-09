@@ -235,9 +235,9 @@ Default textobject is activated for identifiers from digits (0, ..., 9), punctua
 ### Session management
 | Mode | Keys        | Description                    |
 | ---- | ----------- | ------------------------------ |
-| n    | `<Space>wf` | Find session                   |
-| n    | `<Space>ww` | Create/Write session           |
-| n    | `<Space>wr` | Restore session                |
+| n    | `<Space>wf` | Find/Search sessions           |
+| n    | `<Space>wp` | Persist session                |
+| n    | `<Space>ww` | Restore session                |
 
 
 ### Markdown

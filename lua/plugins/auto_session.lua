@@ -6,8 +6,8 @@ return {
     "SessionSearch"
   },
   keys = {
-    { '<leader>wr', '<cmd>SessionRestore<CR>', desc = 'Restore session' },
-    { '<leader>ww', '<cmd>SessionSave<CR>', desc = 'Write session' },
+    { '<leader>ww', '<cmd>SessionRestore<CR>', desc = 'Restore session' },
+    { '<leader>wp', '<cmd>SessionSave<CR>', desc = 'Persist session' },
     { '<leader>wf', '<cmd>SessionSearch<CR>', desc = 'Search sessions' },
   },
   opts = {
