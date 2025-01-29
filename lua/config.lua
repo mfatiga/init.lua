@@ -9,7 +9,17 @@ return {
         },
       },
     },
-    nextls = { },
+    nextls = {
+      cmd = {"nextls", "--stdio"},
+      init_options = {
+        extensions = {
+          credo = { enable = true }
+        },
+        experimental = {
+          completions = { enable = true }
+        },
+      },
+    },
     gopls ={ },
     zls = { },
     pyright = { },
