@@ -1,13 +1,6 @@
 return {
   theme = require("themes.kanagawa"),
   language_servers = {
-    pyright = {},
-    elixirls = {},
-    rust_analyzer = {},
-    hls = {
-      filetypes = { 'haskell', 'lhaskell', 'cabal' },
-    },
-    gopls ={},
     lua_ls = {
       settings = {
         Lua = {
@@ -16,5 +9,13 @@ return {
         },
       },
     },
+    nextls = { },
+    gopls ={ },
+    zls = { },
+    pyright = { },
+    hls = {
+      filetypes = { 'haskell', 'lhaskell', 'cabal' },
+    },
+    rust_analyzer = { },
   }
 }

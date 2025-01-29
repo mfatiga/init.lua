@@ -61,6 +61,7 @@ return {
       local mason_lspconfig = require('mason-lspconfig')
       mason_lspconfig.setup {
         ensure_installed = vim.tbl_keys(servers),
+        automatic_installation = true,
       }
       mason_lspconfig.setup_handlers {
         function(server)
@@ -71,8 +72,8 @@ return {
           }
 
           local override_cfg = servers[server]
-          if (override_cfg ~= nil) then
-            for k, v in pairs(servers[server]) do cfg[k] = v end
+          if override_cfg ~= nil then
+            for k, v in pairs(override_cfg) do cfg[k] = v end
           end
 
           require('lspconfig')[server].setup(cfg)
