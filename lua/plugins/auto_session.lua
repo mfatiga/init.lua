@@ -12,6 +12,7 @@ return {
   },
   opts = {
     auto_create = false,
+    auto_restore = true,
     auto_restore_last_session = false,
   },
   config = function (_, opts)
