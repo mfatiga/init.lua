@@ -108,6 +108,7 @@ return {
         preset = 'none',
 
         ['<C-space>'] = { 'show', 'show_documentation', 'hide_documentation' },
+        ['<C-y>'] = { 'select_and_accept', 'fallback' },
         ['<C-e>'] = { 'hide', 'fallback' },
         ['<CR>'] = { 'accept', 'fallback' },
 
