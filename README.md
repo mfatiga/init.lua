@@ -140,18 +140,19 @@ Default textobject is activated for identifiers from digits (0, ..., 9), punctua
 
 | Mode | Keys        | Description             |
 | ---- | ----------- | ----------------------- |
-| n    | `<Space>rn` | Rename                  |
-| n    | `<Space>ca` | Code Action             |
-| n    | `gd`        | Goto Definition         |
-| n    | `gr`        | Goto References         |
-| n    | `gI`        | Goto Implementation     |
+| n    | `grn`       | Rename                  |
+| n    | `gra`       | Code Action             |
+| n    | `gri`       | Goto Implementation     |
+| n    | `grr`       | References (Quickfix)   |
+| n    | `grR`       | References (Telescope)  |
+| n    | `grd`       | Goto Definition         |
+| n    | `grD`       | Goto Declaration        |
 | n    | `<Space>D`  | Type Definition         |
 | n    | `<Space>ds` | Document Symbols        |
 | n    | `<Space>ws` | Workspace Symbols       |
 | n    | `K`         | Hover                   |
 | n    | `gK`        | Signature Documentation |
 | i    | `<Ctrl-k>`  | Signature Documentation |
-| n    | `gD`        | Goto Declaration        |
 | n    | `<Space>wa` | Workspace Add Folder    |
 | n    | `<Space>wd` | Workspace Remove Folder |
 | n    | `<Space>wl` | Workspace List Folders  |
