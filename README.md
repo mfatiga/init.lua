@@ -75,12 +75,22 @@ Default textobject is activated for identifiers from digits (0, ..., 9), punctua
 | `a` | Argument                    |
 
 
+### Default
+| Mode | Keys                                    | Description                                  |
+| ---- | --------------------------------------- | -------------------------------------------- |
+| n    | `[q`,`]q`,`[Q`,`]Q`,`[CTRL-Q`,`]CTRL-Q` | Quickfix navigate                            |
+| n    | `[l`,`]l`,`[L`,`]L`,`[CTRL-L`,`]CTRL-L` | Loc-list navigate                            |
+| n    | `[t`,`]t`,`[T`,`]T`,`[CTRL-T`,`]CTRL-T` | Tag-list navigate                            |
+| n    | `[a`,`]a`,`[A`,`]A`                     | Argument list navigate                       |
+| n    | `[b`,`]b`,`[B`,`]B`                     | Buffer list navigate                         |
+| n    | `[<Space>`,`]<Space>`                   | add an empty line above and below the cursor |
+
 ### General
 
 | Mode | Keys         | Description                                     |
 | ---- | ------------ | ----------------------------------------------- |
-| n    | `K`          | Move selected lines UP with auto-indent         |
-| n    | `J`          | Move selected lines DOWN with auto-indent       |
+| v    | `K`          | Move selected lines UP with auto-indent         |
+| v    | `J`          | Move selected lines DOWN with auto-indent       |
 | x    | `<Space>p`   | Paste-overwrite selected                        |
 | n/v  | `<Space>y`   | Begin yank to system clipboard                  |
 | n    | `<Space>Y`   | Yank line to system clipboard                   |
