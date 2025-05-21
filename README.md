@@ -83,7 +83,8 @@ Default textobject is activated for identifiers from digits (0, ..., 9), punctua
 | n    | `[t`,`]t`,`[T`,`]T`,`[CTRL-T`,`]CTRL-T` | Tag-list navigate                            |
 | n    | `[a`,`]a`,`[A`,`]A`                     | Argument list navigate                       |
 | n    | `[b`,`]b`,`[B`,`]B`                     | Buffer list navigate                         |
-| n    | `[<Space>`,`]<Space>`                   | add an empty line above and below the cursor |
+| n    | `[<Space>`,`]<Space>`                   | Add an empty line above and below the cursor |
+| n    | `g==`                                   | Execute code block                           |
 
 ### General
 
